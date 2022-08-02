@@ -1,0 +1,26 @@
+/*!
+Theme Name: Trulli
+Theme URI: https://elaboranext.com
+Author: Davide Guerra
+Author URI: http://davide-guerra.github.io/
+Description: Theme for trulli website
+Version: 1.0.0
+Tested up to: 5.9
+Requires PHP: 7.1
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: trulli
+Tags: tailwind, alpine js
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+      font-family: Montserrat, system-ui, sans-serif;
+    }
+  }
