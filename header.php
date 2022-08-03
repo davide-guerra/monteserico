@@ -50,12 +50,7 @@ global $post;
         'bg-transparent': !isFixed
         }"
         >
-        <template x-if="isFixed">
-            ora sono fisso
-        </template>
-        <template x-if="!isFixed">
-            ora non sono fisso
-        </template>
+        
         
     </div>
 
