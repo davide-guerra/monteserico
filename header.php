@@ -130,7 +130,7 @@ global $post;
                         <?php } ?>
                     </ul>    
                 </nav>
-                <nav id="small-screen-menu" class="lg:hidden" :class="{ 'absolute top-0 left-0 bg-maincolor p-8 h-screen w-screen z-50': isOpen, 'hidden': !isOpen }">
+                <nav id="small-screen-menu" class="lg:hidden" :class="{ 'absolute top-0 left-0 bg-verde p-8 h-screen w-screen z-50': isOpen, 'hidden': !isOpen }">
                     <div id="close-btn" class="flex justify-end text-white cursor-pointer hover:opacity-90" @click="isOpen = !isOpen">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                     </div>
