@@ -7,7 +7,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        'maincolor':'#0075b7',
+        'oro':'#CA9E67',
+        'verde': '#3F5C48',
       },
       backgroundImage: {
         'ceramiche': "url('/wp-content/themes/trulli/assets/ceramiche.jpg')",
