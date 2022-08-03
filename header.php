@@ -4,7 +4,7 @@ if(!is_user_logged_in()){
 }
 // Define the menus name based on WPML selected language
 $top_menu_name = /*(ICL_LANGUAGE_CODE == 'it') ? 'Top menu' :*/ 'Top menu';
-$mobile_menu_name = /*(ICL_LANGUAGE_CODE == 'it') ? 'Footer menu' :*/ 'Mobile menu';
+//$mobile_menu_name = /*(ICL_LANGUAGE_CODE == 'it') ? 'Footer menu' :*/ 'Mobile menu';
 global $post;
 ?>
 <!DOCTYPE html>
@@ -231,7 +231,7 @@ global $post;
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                         </div>
                         <ul class="pt-6 lg:pt-0 list-reset flex flex-col gap-4">
-                            <?php $menu_array = wp_get_menu_array($mobile_menu_name); // The wp_get_menu_array() function is defined in /inc/get_menu_as_array.php ?>
+                            <?php $menu_array = wp_get_menu_array($top_menu_name); // The wp_get_menu_array() function is defined in /inc/get_menu_as_array.php ?>
                             <?php foreach ($menu_array as $item){ ?>
                                 <li class="mobile-menu-item relative" x-data="{showSub: false}">
                                     <a class="inline-block font-bold text-white no-underline relative flex flex-column items-center gap-2 hover:opacity-90" href="<?php echo $item['url']; ?>"
