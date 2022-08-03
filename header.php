@@ -133,7 +133,38 @@ global $post;
                     </span>
                 </div>
             </div>
-            <div>Qui va il menu</div>
+            <nav id="large-screen-menu" class="hidden lg:block">
+                <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center gap-6">
+                    <?php $menu_array = wp_get_menu_array($top_menu_name); // The wp_get_menu_array() function is defined in /inc/get_menu_as_array.php ?>
+                    <?php foreach ($menu_array as $item){ ?>
+                        <li class="large-menu-item relative" x-data="{showSub: false}">
+                            <a class="inline-block no-underline relative flex flex-column items-center gap-2 hover:opacity-90" href="<?php echo $item['url']; ?>"
+                                <?php if ($item['children']) { ?>
+                                    @click="event.preventDefault(); showSub = ! showSub"
+                                <?php } ?>
+                            >
+                                <?php echo $item['title']; ?>
+                                <?php if ($item['children']) { ?>
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                <?php } ?>
+                            </a>
+                            <?php if ($item['children']) { ?>
+                                <div x-show="showSub" class="absolute right-0 left-0 p-4 mt-2 bg-white shadow-2xl w-fit z-50" @click.away="showSub = false">
+                                    <ul class="submenu min-w-[12em] flex flex-col gap-4">
+                                        <?php foreach ($item['children'] as $subitem) { ?>
+                                            <li>
+                                                <a class="inline-block no-underline hover:opacity-90" href="<?php echo($subitem['url']); ?>">
+                                                    <?php echo($subitem['title']); ?>
+                                                </a>
+                                            </li>
+                                        <?php } ?>
+                                    </ul>
+                                </div>
+                            <?php } ?>
+                        </li>
+                    <?php } ?>
+                </ul>    
+            </nav>
         </div>
         <div x-show="isScrolled">
             <div class="flex items-center flex-wrap max-w-7xl mx-auto px-4">
