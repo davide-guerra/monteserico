@@ -53,7 +53,7 @@ global $post;
         <div x-show="!isScrolled">
             <div class="flex items-center flex-wrap max-w-7xl mx-auto px-4">
                 <!-- First item: logo -->
-                <div class="text-white order-2 lg:order-1 flex-1 flex justify-center lg:justify-start">
+                <div class="text-white order-2 flex-1 flex justify-center lg:justify-start">
                     <a class="text-white no-underline hover:text-white hover:no-underline" href="<?php echo( (ICL_LANGUAGE_CODE == 'it') ? '/' : '/en'); ?>">
                         <svg class="w-24 md:w-36 py-4" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 745.623 258.935">
                             <defs>
@@ -72,7 +72,7 @@ global $post;
                 </div>
 
                 <!-- Second item: toggle button (hidden on large screens) and menu -->
-                <div id="hamburger-and-menu" class="order-1 lg:oder-2 h-full" @click.away="isOpen = false">
+                <div id="hamburger-and-menu" class="order-1 h-full" @click.away="isOpen = false">
                     <button @click="isOpen = !isOpen" type="button" class="block lg:hidden px-2 hover:opacity-90 focus:outline-none">
                         <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
