@@ -50,12 +50,12 @@ global $post;
         'bg-transparent': !isScrolled
         }"
         >
-        <template x-if="!isScrolled">
+        <div x-show="!isScrolled">
             header iniziale
-        </template>
-        <template x-if="isScrolled">
+        </div>
+        <div x-show="isScrolled">
             header quando scrollato
-        </template>
+        </div>
     </div>
 
     <!-- Content begins here -->
