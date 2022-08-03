@@ -2,7 +2,7 @@
 <?php /* Template Name: Contatti */ ?>
 <?php
   // Get the header
-  get_header( 'fixed' );
+  get_header();
 ?> 
 <?php 
 global $post;

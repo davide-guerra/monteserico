@@ -1,7 +1,7 @@
 <?php /* Template Name: Il borgo */ ?>
 <?php
   // Get the header
-  get_header( 'fixed' );
+  get_header();
 ?> 
 <?php 
 global $post;
