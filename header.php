@@ -117,7 +117,7 @@ global $post;
                     </nav>
                 </div>
                 <!-- Third element: menu -->
-                <div id="language-switcher-wrapper" class="block order-3 grow basis-0 no-underline flex flex-row gap-6 items-center">
+                <div id="language-switcher-wrapper" class="block order-3 grow basis-0 no-underline flex flex-row gap-6 items-center justify-end">
                     <div>email</div>
                     <?php if( apply_filters( 'wpml_element_has_translations', NULL, $post->ID, 'page' ) ) { ?>
                         <div class="hidden lg:block">|</div>
