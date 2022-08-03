@@ -38,7 +38,7 @@ global $post;
     <?php } ?>
     <title><?php echo( get_bloginfo( 'name' ) ); ?></title>
 </head>
-<body class="absolute top-0 w-full">
+<body class="absolute top-0 w-full min-h-screen flex flex-col">
     <div
         class="w-full z-10 top-0 fixed bg-white"
         x-data="{ isOpen: false, isScrolled: false, dropdownMenu: false }"
@@ -276,4 +276,4 @@ global $post;
     </div>
 
     <!-- Content begins here -->
-    <div id="entry-content">
+    <div id="entry-content" class="flex-1">
