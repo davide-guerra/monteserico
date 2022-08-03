@@ -88,6 +88,7 @@ global $post;
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                         </div>
                         <ul class="pt-6 lg:pt-0 list-reset flex flex-col gap-4">
+                            <li>item</li>
                             <?php $menu_array = wp_get_menu_array($mobile_menu_name); // The wp_get_menu_array() function is defined in /inc/get_menu_as_array.php ?>
                             <?php foreach ($menu_array as $item){ ?>
                                 <li class="mobile-menu-item relative" x-data="{showSub: false}">
