@@ -29,7 +29,7 @@ $page_id = $post->ID;
               // Get data from this slide
               $meta = get_post_meta( $post->ID, 'slider_fields', true );
               ?>
-              <img src="<?php echo the_post_thumbnail_url( 'full' ); ?>" class="w-full h-[100vh] lg:h-[75vh] object-cover brightness-75"/>
+              <img src="<?php echo the_post_thumbnail_url( 'full' ); ?>" class="w-full h-[100vh] lg:h-[100vh] object-cover brightness-75"/>
               <?php if ( strlen($meta['text'])>0 || strlen($meta['button'])>0 ) { ?>
               <div class="p-8 absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 w-3/4 flex flex-col items-center">
               <?php  if (is_array($meta) && isset($meta['text']) && strlen($meta['text'])>0 ){ ?>
