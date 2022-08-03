@@ -127,6 +127,7 @@ global $post;
                     </span>
                 </div>
             </div>
+            <div>Qui va il menu</div>
         </div>
         <div x-show="isScrolled">
             <div class="flex items-center flex-wrap max-w-7xl mx-auto px-4">
