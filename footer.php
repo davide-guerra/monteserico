@@ -38,7 +38,7 @@ $footer_3_menu_name = /*(ICL_LANGUAGE_CODE == 'it') ? 'Top menu' :*/ 'Footer 3';
 
 
 </div>
-<footer class="bg-maincolor mt-8">
+<footer class="bg-verde mt-8">
     <div class="block lg:flex max-w-7xl mx-auto px-4 pt-8 pb-4 gap-16 items-center">
         <div id="footer-informations" class="flex-1 flex flex-col gap-4 items-center lg:items-start">
         <svg class="w-24 lg:w-32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 745.623 258.935">
