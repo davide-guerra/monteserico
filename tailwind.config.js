@@ -1,6 +1,10 @@
 module.exports = {
   content: ["./**/*.php"],
   theme: {
+    fontFamily: {
+      'sans': 'Montserrat, sans-serif',
+      'serif': 'Faustina, serif',
+    },
     extend: {
       colors: {
         'maincolor':'#0075b7',
