@@ -134,7 +134,7 @@ global $post;
                 </div>
             </div>
             <nav id="large-screen-menu" class="hidden lg:block">
-                <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-center flex-1 items-center gap-6">
+                <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-center flex-1 items-center gap-6 text-white">
                     <?php $menu_array = wp_get_menu_array($top_menu_name); // The wp_get_menu_array() function is defined in /inc/get_menu_as_array.php ?>
                     <?php foreach ($menu_array as $item){ ?>
                         <li class="large-menu-item relative" x-data="{showSub: false}">
