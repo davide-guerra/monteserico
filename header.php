@@ -51,9 +51,9 @@ global $post;
         }"
         >
         <div x-show="!isScrolled">
-            <div class="flex items-center flex-wrap max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between flex-wrap max-w-7xl mx-auto px-4">
                 <!-- First item: logo -->
-                <div class="text-white order-2 flex-1 flex justify-center lg:justify-start">
+                <div class="text-white order-2 flex justify-center lg:justify-start">
                     <a class="text-white no-underline hover:text-white hover:no-underline" href="<?php echo( (ICL_LANGUAGE_CODE == 'it') ? '/' : '/en'); ?>">
                         <svg class="w-24 md:w-36 py-4" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 745.623 258.935">
                             <defs>
@@ -72,7 +72,7 @@ global $post;
                 </div>
 
                 <!-- Second item: toggle button (hidden on large screens) and menu -->
-                <div id="hamburger-and-menu" class="order-1 h-full" @click.away="isOpen = false">
+                <div id="hamburger-and-menu" class="order-1 h-full grow basis-0" @click.away="isOpen = false">
                     <div>indirizzo</div>
                     <button @click="isOpen = !isOpen" type="button" class="block lg:hidden px-2 hover:opacity-90 focus:outline-none">
                         <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -117,7 +117,7 @@ global $post;
                     </nav>
                 </div>
                 <!-- Third element: menu -->
-                <div id="language-switcher-wrapper" class="block order-3 no-underline flex flex-row gap-6 items-center">
+                <div id="language-switcher-wrapper" class="block order-3 grow basis-0 no-underline flex flex-row gap-6 items-center">
                     <div>email</div>
                     <?php if( apply_filters( 'wpml_element_has_translations', NULL, $post->ID, 'page' ) ) { ?>
                         <div class="hidden lg:block">|</div>
