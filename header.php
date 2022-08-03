@@ -38,7 +38,7 @@ global $post;
     <?php } ?>
     <title><?php echo( get_bloginfo( 'name' ) ); ?></title>
 </head>
-<body class="absolute top-0">
+<body class="absolute top-0 w-full">
     <div
         class="w-full z-10 top-0 fixed bg-white"
         x-data="{ isOpen: false, isScrolled: false, dropdownMenu: false }"
