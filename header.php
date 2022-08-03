@@ -51,7 +51,82 @@ global $post;
         }"
         >
         <div x-show="!isScrolled">
-            header iniziale
+            <div class="flex items-center flex-wrap max-w-7xl mx-auto px-4">
+                <div id="hamburger-and-menu" class="order-1 lg:oder-2 h-full" @click.away="isOpen = false">
+                    <button @click="isOpen = !isOpen" type="button" class="block lg:hidden px-2 hover:opacity-90 focus:outline-none">
+                        <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </button>
+                    <nav id="large-screen-menu" class="hidden lg:block">
+                        <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center gap-6">
+                            <?php $menu_array = wp_get_menu_array($top_menu_name); // The wp_get_menu_array() function is defined in /inc/get_menu_as_array.php ?>
+                            <?php foreach ($menu_array as $item){ ?>
+                                <li class="large-menu-item relative" x-data="{showSub: false}">
+                                    <a class="inline-block no-underline relative flex flex-column items-center gap-2 hover:opacity-90" href="<?php echo $item['url']; ?>"
+                                        <?php if ($item['children']) { ?>
+                                            @click="event.preventDefault(); showSub = ! showSub"
+                                        <?php } ?>
+                                    >
+                                        <?php echo $item['title']; ?>
+                                        <?php if ($item['children']) { ?>
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                        <?php } ?>
+                                    </a>
+                                    <?php if ($item['children']) { ?>
+                                        <div x-show="showSub" class="absolute right-0 left-0 p-4 mt-2 bg-white shadow-2xl w-fit z-50" @click.away="showSub = false">
+                                            <ul class="submenu min-w-[12em] flex flex-col gap-4">
+                                                <?php foreach ($item['children'] as $subitem) { ?>
+                                                    <li>
+                                                        <a class="inline-block no-underline hover:opacity-90" href="<?php echo($subitem['url']); ?>">
+                                                            <?php echo($subitem['title']); ?>
+                                                        </a>
+                                                    </li>
+                                                <?php } ?>
+                                            </ul>
+                                        </div>
+                                    <?php } ?>
+                                </li>
+                            <?php } ?>
+                        </ul>    
+                    </nav>
+                    <nav id="small-screen-menu" class="lg:hidden" :class="{ 'absolute top-0 left-0 bg-verde p-8 h-screen w-screen z-50': isOpen, 'hidden': !isOpen }">
+                        <div id="close-btn" class="flex justify-end text-white cursor-pointer hover:opacity-90" @click="isOpen = !isOpen">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </div>
+                        <ul class="pt-6 lg:pt-0 list-reset flex flex-col gap-4">
+                            <?php $menu_array = wp_get_menu_array($mobile_menu_name); // The wp_get_menu_array() function is defined in /inc/get_menu_as_array.php ?>
+                            <?php foreach ($menu_array as $item){ ?>
+                                <li class="mobile-menu-item relative" x-data="{showSub: false}">
+                                    <a class="inline-block font-bold text-white no-underline relative flex flex-column items-center gap-2 hover:opacity-90" href="<?php echo $item['url']; ?>"
+                                        <?php if ($item['children']) { ?>
+                                            @click="event.preventDefault(); showSub = ! showSub"
+                                        <?php } ?>
+                                    >
+                                        <?php echo $item['title']; ?>
+                                        <?php if ($item['children']) { ?>
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                        <?php } ?>
+                                    </a>
+                                    <?php if ($item['children']) { ?>
+                                        <div x-show="showSub" class="p-4 mt-2 text-white">
+                                            <ul class="submenu flex flex-col gap-2">
+                                                <?php foreach ($item['children'] as $subitem) { ?>
+                                                    <li>
+                                                        <a class="inline-block font-bold no-underline hover:opacity-90" href="<?php echo($subitem['url']); ?>">
+                                                            <?php echo($subitem['title']); ?>
+                                                        </a>
+                                                    </li>
+                                                <?php } ?>
+                                            </ul>
+                                        </div>
+                                    <?php } ?>
+                                </li>
+                            <?php } ?>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
         <div x-show="isScrolled">
             <div class="flex items-center flex-wrap max-w-7xl mx-auto px-4">
