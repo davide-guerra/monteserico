@@ -128,7 +128,7 @@ global $post;
                     <?php if( apply_filters( 'wpml_element_has_translations', NULL, $post->ID, 'page' ) ) { ?>
                         <div class="text-white hidden lg:block">|</div>
                     <?php } ?>
-                    <span class="text-wihite hover:opacity-90 cursor-pointer">
+                    <span class="text-white hover:opacity-90 cursor-pointer">
                     <?php do_action('wpml_add_language_selector'); ?>
                     </span>
                 </div>
