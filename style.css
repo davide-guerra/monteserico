@@ -738,6 +738,10 @@ html {
   width: 1rem;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -746,6 +750,10 @@ html {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .w-3\/4 {
@@ -974,6 +982,11 @@ html {
   padding-right: 0.5rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1142,6 +1155,14 @@ html {
 }
 
 @media (min-width: 768px) {
+  .md\:w-48 {
+    width: 12rem;
+  }
+
+  .md\:w-56 {
+    width: 14rem;
+  }
+
   .md\:w-36 {
     width: 9rem;
   }
