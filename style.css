@@ -702,12 +702,16 @@ html {
   height: 1.5rem;
 }
 
-.h-4 {
-  height: 1rem;
+.h-8 {
+  height: 2rem;
 }
 
 .h-full {
   height: 100%;
+}
+
+.h-4 {
+  height: 1rem;
 }
 
 .h-screen {
@@ -734,12 +738,16 @@ html {
   width: 6rem;
 }
 
-.w-4 {
-  width: 1rem;
+.w-8 {
+  width: 2rem;
 }
 
 .w-32 {
   width: 8rem;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .w-screen {
