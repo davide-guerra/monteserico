@@ -39,7 +39,11 @@ $home_id = get_option('page_on_front');
         </style>
     <?php } ?>
     <style>[x-cloak] { display: none !important; }</style>
-    <title><?php echo( get_bloginfo( 'name' ) ); ?></title>
+    <?php if (is_front_page()) { ?>
+        <title><?php echo( get_bloginfo( 'name' ) ); ?></title>
+    <?php } else { ?>
+        <title><?php echo(is_404() ? 'Not found' : the_title()); ?> | <?php echo( get_bloginfo( 'name' ) ); ?></title>
+    <?php } ?>
 </head>
 <body class="absolute top-0 w-full min-h-screen flex flex-col">
     <div
