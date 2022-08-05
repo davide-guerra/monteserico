@@ -1374,10 +1374,6 @@ html {
     flex-direction: row-reverse;
   }
 
-  .lg\:items-start {
-    align-items: flex-start;
-  }
-
   .lg\:justify-start {
     justify-content: flex-start;
   }
