@@ -132,10 +132,10 @@ $language_for_cookie = ($current_language == 'it')? 'it' : 'en';
         font-weight: bold;
     }
     div#cm #c-inr #c-bns button#c-p-bn {
-        background: #0075b7;
+        background: #3F5C48;
     }
     div#cs #c-s-in #s-inr #s-bns #s-all-bn {
-        background: #0075b7;
+        background: #3F5C48;
     }
     #cm.bar #c-inr {
         max-width: 60em !important;
@@ -149,7 +149,7 @@ $language_for_cookie = ($current_language == 'it')? 'it' : 'en';
         padding-bottom: 1.5em;
     }
     div#c-txt a:hover {
-        color: #0075b7;
+        color: #3F5C48;
     }
     a.privacy-link {
         color: #fff;
