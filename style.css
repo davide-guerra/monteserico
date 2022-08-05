@@ -1346,12 +1346,12 @@ html {
     grid-auto-rows: minmax(0, 1fr);
   }
 
-  .lg\:grid-cols-8 {
-    grid-template-columns: repeat(8, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-4 {
