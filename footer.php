@@ -63,7 +63,7 @@ $home_id = get_option('page_on_front');
         <div class="flex flex-col lg:flex-row">
             <a href="https://www.duerighe.it" target="_blank" class="hover:opacity-90 text-xs">PRIVACY POLICY</a>
             <span class="hidden lg:inline pl-2 pr-2"> | </span>
-            <a href="https://www.duerighe.it" target="_blank" class="hover:opacity-90 text-xs"><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'IMPOSTAZIONI COOKIE' : 'COOKIE SETTINGS' ); ?></a>
+            <a href="javascript:void(0);" aria-label="View cookie settings" data-cc="c-settings" aria-haspopup="dialog" class="hover:opacity-90 text-xs"><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'IMPOSTAZIONI COOKIE' : 'COOKIE SETTINGS' ); ?></a>
         </div>
     </div>
 </footer>
