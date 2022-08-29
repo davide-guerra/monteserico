@@ -57,85 +57,29 @@ $page_id = $post->ID;
   wp_reset_postdata();
 ?>   
 
-<!-- Three boxes -->
-<?php
-$box1 = get_field('primo_box');
-$box2 = get_field('secondo_box');
-$box3 = get_field('terzo_box');
-?>
 
-
-<?php // Codice per mostrare i tre box con testo parzialmente sovrapposto alle immagini. ?>
-<?php /*
-<div class="hidden lg:block w-full bg-white py-28">
+<!-- Prima fascia -->
+<div class="w-full bg-white py-14">
   <div class="max-w-7xl mx-auto px-4">
-    <div class="grid grid-cols-3 gap-12">
-      
-     <div class="h-full w-full flex flex-col gap-4">
-       <div class="flex-1 grid grid-cols-10 lg:grid-rows-12 xl:grid-rows-29 auto-rows-fr">
-        <div class="col-start-1 col-end-11 row-start-1 lg:row-end-6 xl:row-end-14 aspect-[21/9]">
-          <img src="<?php echo $box1['immagine']; ?>" class="w-full h-full object-cover">
-        </div>
-        <div class="col-start-2 col-end-10 lg:row-start-4 xl:row-start-11 lg:row-end-13 xl:row-end-30 bg-white p-2 pt-4">
-        <h2 class="text-maincolor text-xl text-center mb-4"><?php echo $box1['titolo']; ?></h2>
-            <p class="flex-1 text-center lg:leading-7"><?php echo $box1['testo']; ?></p>
-        </div>
-       </div>
-       <div class="flex justify-center">
-            <a href="<?php echo $box1['url']; ?>" class="inline-block bg-maincolor text-white hover:opacity-90 px-4 py-2">
-              <div class="flex flex-row gap-2 items-center">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                <span class="uppercase"><?php echo $box1['action']; ?></span>
-              </div>
-            </a>
-          </div>
-     </div>
-
-     <div class="h-full w-full flex flex-col gap-4">
-       <div class="flex-1 grid grid-cols-10 lg:grid-rows-12 xl:grid-rows-29 auto-rows-fr">
-        <div class="col-start-1 col-end-11 row-start-1 lg:row-end-6 xl:row-end-14 aspect-[21/9]">
-          <img src="<?php echo $box2['immagine']; ?>" class="w-full h-full object-cover">
-        </div>
-        <div class="col-start-2 col-end-10 lg:row-start-4 xl:row-start-11 lg:row-end-13 xl:row-end-30 bg-white p-2 pt-4">
-        <h2 class="text-maincolor text-xl text-center mb-4"><?php echo $box2['titolo']; ?></h2>
-            <p class="flex-1 text-center lg:leading-7"><?php echo $box2['testo']; ?></p>
-        </div>
-       </div>
-       <div class="flex justify-center">
-            <a href="<?php echo $box2['url']; ?>" class="inline-block bg-maincolor text-white hover:opacity-90 px-4 py-2">
-              <div class="flex flex-row gap-2 items-center">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                <span class="uppercase"><?php echo $box2['action']; ?></span>
-              </div>
-            </a>
-          </div>
-     </div>
-
-     <div class="h-full w-full flex flex-col gap-4">
-       <div class="flex-1 grid grid-cols-10 lg:grid-rows-12 xl:grid-rows-29 auto-rows-fr">
-        <div class="col-start-1 col-end-11 row-start-1 lg:row-end-6 xl:row-end-14 aspect-[21/9]">
-          <img src="<?php echo $box3['immagine']; ?>" class="w-full h-full object-cover">
-        </div>
-        <div class="col-start-2 col-end-10 lg:row-start-4 xl:row-start-11 lg:row-end-13 xl:row-end-30 bg-white p-2 pt-4">
-        <h2 class="text-maincolor text-xl text-center mb-4"><?php echo $box3['titolo']; ?></h2>
-            <p class="flex-1 text-center lg:leading-7"><?php echo $box3['testo']; ?></p>
-        </div>
-       </div>
-       <div class="flex justify-center">
-            <a href="<?php echo $box3['url']; ?>" class="inline-block bg-maincolor text-white hover:opacity-90 px-4 py-2">
-              <div class="flex flex-row gap-2 items-center">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                <span class="uppercase"><?php echo $box3['action']; ?></span>
-              </div>
-            </a>
-          </div>
-     </div>
-
-
-    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsa voluptatem praesentium asperiores quam at hic quos saepe recusandae mollitia dicta minima aliquam animi. Vitae recusandae asperiores mollitia praesentium quisquam?
   </div>
 </div>
-*/ ?>
+
+<!-- Primo banner -->
+
+<!-- Seconda fascia -->
+
+<!-- Secondo banner -->
+
+<!-- Terza fascia -->
+
+
+<!-- Three boxes -->
+<?php
+  $box1 = get_field('primo_box');
+  $box2 = get_field('secondo_box');
+  $box3 = get_field('terzo_box');
+?>
 
 
 <div class="hidden lg:block w-full bg-white py-14">
