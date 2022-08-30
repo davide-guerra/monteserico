@@ -73,7 +73,7 @@ $page_id = $post->ID;
         <p><?php echo( get_field('testo_fascia_1') ); ?></p>
 
         <div>
-          <a href="<?php echo( get_field('link_bottone_fascia_1') ); ?>" class="mt-4 text-xl hover:opacity-90 inline-block border px-4 py-2">
+          <a href="<?php echo( get_field('link_bottone_fascia_1') ); ?>" class="mt-4 hover:opacity-90 inline-block border px-4 py-2">
           <div class="flex flex-row gap-2 items-center">
             <span><?php echo( get_field('testo_bottone_fascia_1') ); ?></span>
           </div>
