@@ -69,11 +69,11 @@ $page_id = $post->ID;
     <?php } ?>
     <div class="w-full lg:grid lg:grid-cols-2 gap-4">
       <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_1') ); ?>">
-      <div class="mt-4 lg:mt-0 flex flex-col gap-2">
+      <div class="mt-4 lg:mt-0 flex flex-col gap-4">
         <p><?php echo( get_field('testo_fascia_1') ); ?></p>
 
         <div>
-          <a href="<?php echo( get_field('link_bottone_fascia_1') ); ?>" class="mt-4 hover:opacity-90 inline-block border px-4 py-2">
+          <a href="<?php echo( get_field('link_bottone_fascia_1') ); ?>" class="hover:opacity-90 inline-block border border-current px-4 py-2">
           <div class="flex flex-row gap-2 items-center">
             <span><?php echo( get_field('testo_bottone_fascia_1') ); ?></span>
           </div>
