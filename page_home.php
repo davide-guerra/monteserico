@@ -68,8 +68,20 @@ $page_id = $post->ID;
       <h3 class="font-serif text-oro text-3xl font-bold my-4"><?php echo( get_field('sottotitolo_fascia_1') ); ?></h3>
     <?php } ?>
     <div class="w-full lg:grid lg:grid-cols-2 gap-4">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae quisquam, non minus suscipit nobis ratione, eligendi explicabo vitae esse quidem illum! Unde optio nulla dolorum minima expedita laudantium quis praesentium!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, laudantium iste, mollitia alias maxime natus quod ab sunt deleniti perspiciatis distinctio eum sequi, exercitationem hic itaque eaque facere placeat reprehenderit!</p>
+      <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_1') ); ?>">
+      <div class="mt-4 lg:mt-0 flex flex-col gap-2">
+        <p><?php echo( get_field('testo_fascia_1') ); ?></p>
+
+        <div>
+          <a href="<?php echo( get_field('link_bottone_fascia_1') ); ?>" class="mt-4 text-xl hover:opacity-90 inline-block border px-4 py-2">
+          <div class="flex flex-row gap-2 items-center">
+            <span><?php echo( get_field('testo_bottone_fascia_1') ); ?></span>
+          </div>
+          </a>
+        </div>
+
+
+      </div>
     </div>
   </div>
 </div>
