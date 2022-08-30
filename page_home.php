@@ -81,7 +81,7 @@ $page_id = $post->ID;
         </div>
       </div>
     </div>
-    <div class="w-full lg:flex lg:flex-col lg:items-end lg:pl-12">
+    <div class="w-full mt-4 lg:mt-0 lg:flex lg:flex-col lg:items-end lg:pl-12">
       <img class="w-full" src="<?php echo( get_field('immagine_grande_fascia_1') ); ?>">
   </div>
 </div>
