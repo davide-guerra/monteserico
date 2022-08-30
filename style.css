@@ -1381,6 +1381,14 @@ html {
     flex-direction: row-reverse;
   }
 
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
+  .lg\:items-end {
+    align-items: flex-end;
+  }
+
   .lg\:justify-start {
     justify-content: flex-start;
   }
@@ -1408,6 +1416,10 @@ html {
 
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:pl-12 {
+    padding-left: 3rem;
   }
 
   .lg\:text-left {
