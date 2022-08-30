@@ -62,10 +62,10 @@ $page_id = $post->ID;
 <div class="w-full bg-white py-14">
   <div class="max-w-7xl mx-auto px-4">
     <?php if( !empty(get_field('titolo_fascia_1')) ) { ?>
-      <h2 class="font-serif text-oro text-5xl"><?php echo( get_field('titolo_fascia_1') ); ?></h2>
+      <h2 class="font-serif text-oro text-5xl font-bold"><?php echo( get_field('titolo_fascia_1') ); ?></h2>
     <?php } ?>
     <?php if( !empty(get_field('sottotitolo_fascia_1')) ) { ?>
-      <h3 class="font-serif text-oro text-3xl"><?php echo( get_field('sottotitolo_fascia_1') ); ?></h3>
+      <h3 class="font-serif text-oro text-3xl font-bold my-4"><?php echo( get_field('sottotitolo_fascia_1') ); ?></h3>
     <?php } ?>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsa voluptatem praesentium asperiores quam at hic quos saepe recusandae mollitia dicta minima aliquam animi. Vitae recusandae asperiores mollitia praesentium quisquam?</p>
   </div>
