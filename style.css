@@ -1000,6 +1000,11 @@ html {
   padding-right: 3rem;
 }
 
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
 }
