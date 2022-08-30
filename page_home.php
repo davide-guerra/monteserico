@@ -61,7 +61,7 @@ $page_id = $post->ID;
 <!-- Prima fascia -->
 <div class="w-full bg-white py-14">
   <div class="max-w-7xl mx-auto px-4">
-    <h2 class="font-serif text-oro">Lorem ipsum</h2>
+    <h2 class="font-serif text-oro text-3xl">Lorem ipsum</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsa voluptatem praesentium asperiores quam at hic quos saepe recusandae mollitia dicta minima aliquam animi. Vitae recusandae asperiores mollitia praesentium quisquam?</p>
   </div>
 </div>
