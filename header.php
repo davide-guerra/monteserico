@@ -22,7 +22,7 @@ $home_id = get_option('page_on_front');
     <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,400;0,700;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers@1.2.x/dist/component.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.5.0/dist/alpine.min.js" defer></script>
-    <?php if (is_front_page()) { ?>
+    <?php //if (is_front_page()) { ?>
         <!-- Import Splide JS stylesheet from cdn -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css" integrity="sha256-6YrKt7vMU9e4bwtlblASqhvvEt4/0JEQJ/zyWOFKnaM=" crossorigin="anonymous">     
         <!-- Import LightGallery JS stylesheet from cdn -->
@@ -37,7 +37,7 @@ $home_id = get_option('page_on_front');
                 fill: #fff;
             }
         </style>
-    <?php } ?>
+    <?php //} ?>
     <style>[x-cloak] { display: none !important; }</style>
     <?php if (is_front_page()) { ?>
         <title><?php echo( get_bloginfo( 'name' ) . ' | ' . get_bloginfo('description') ); ?></title>

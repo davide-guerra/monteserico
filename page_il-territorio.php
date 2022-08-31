@@ -28,9 +28,23 @@ $page_id = $post->ID;
         </div>
     </div>
 </section>
-<!-- Sezione full-width senza sfondo -->
-<section class="max-w-7xl mx-auto px-4 py-12 break-words">
-    <?php the_content(); ?>
+
+<!-- Prima sezione -->
+<section class="w-full bg-white py-14">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="w-full lg:grid lg:grid-cols-2 gap-8">
+      <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_1') ); ?>">
+      <div class="mt-4 lg:mt-0 flex flex-col gap-4">
+        <p><?php echo( get_field('testo_fascia_1') ); ?></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="w-full bg-white py-14">
+  <div>
+
+  </div>
 </section>
 
 
