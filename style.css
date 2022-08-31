@@ -1175,6 +1175,10 @@ html {
     aspect-ratio: 7 / 2;
   }
 
+  .md\:aspect-\[7\/3\] {
+    aspect-ratio: 7 / 3;
+  }
+
   .md\:w-48 {
     width: 12rem;
   }
@@ -1497,5 +1501,11 @@ html {
 
   .lg\:leading-7 {
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:aspect-\[7\/2\] {
+    aspect-ratio: 7 / 2;
   }
 }
