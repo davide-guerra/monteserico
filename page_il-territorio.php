@@ -1,3 +1,4 @@
+<?php /* Template Name: Il territorio */ ?>
 <?php
   // Get the header
   get_header();
