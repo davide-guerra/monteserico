@@ -1330,6 +1330,10 @@ html {
     aspect-ratio: 21 / 8;
   }
 
+  .lg\:aspect-\[7\/2\] {
+    aspect-ratio: 7 / 2;
+  }
+
   .lg\:h-\[100vh\] {
     height: 100vh;
   }

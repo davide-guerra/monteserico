@@ -7,7 +7,7 @@ global $post;
 $page_id = $post->ID;
 ?>
 <section class="w-full">
-    <div class="w-full relative aspect-[16/9]">
+    <div class="w-full relative aspect-[16/9] lg:aspect-[7/2]">
         <img src="<?php echo get_the_post_thumbnail_url($page_id, 'full'); ?>" class="w-full h-full object-cover brightness-75">
         <div class="absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 flex flex-col gap-4 z-10">
             <h2 class="text-center text-white text-2xl lg:text-4xl"><?php the_title(); ?></h2>
