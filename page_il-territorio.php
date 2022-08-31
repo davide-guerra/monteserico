@@ -7,6 +7,32 @@
 global $post;
 $page_id = $post->ID;
 ?>
+<!-- Add style for slider -->
+<style>
+    ul.splide__list {
+        gap: 1rem;
+    }
+    li.splide__slide {
+        opacity: .1;
+    }
+    li.splide__slide.is-active {
+        opacity: 1;
+    }
+    .splide__arrow {
+        position: unset;
+        transform: translateY(0px);
+        background: none;
+    }
+    .splide__arrows {
+        margin-left: calc(30vw + 1rem);
+        margin-right: calc(15vw - 1rem);
+        display: flex;
+        justify-content: space-between;
+    }
+    .splide__arrow--prev svg {
+        transform: unset;
+    }
+</style>
 <!-- Title and breadcrumbs area -->
 <section class="w-full">
     <div class="w-full relative aspect-[16/9] md:aspect-[7/3] 2xl:aspect-[7/2]">
@@ -42,12 +68,42 @@ $page_id = $post->ID;
 </section>
 
 <section class="w-full bg-white py-14">
-  <div>
-
+  <div style="max-width:100%; margin: 0 auto; position:relative;">
+    <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide" style="background:red; padding:5rem">Slide 01</li>
+                <li class="splide__slide" style="background:green; padding:5rem">Slide 02</li>
+                <li class="splide__slide" style="background:blue; padding:5rem">Slide 03</li>
+            </ul>
+        </div>
+        <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-6 h-6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10 19-7-7m0 0 7-7m-7 7h18"/></svg>
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+      </div>
+    </div>
+    <div style="position:absolute; left:1rem; top:1rem; width: 20vw;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae ad cum asperiores repudiandae illo distinctio quo maxime odio quisquam officiis perspiciatis, placeat animi sed dolorem consequatur vitae voluptates? Cum, totam?</div>
   </div>
 </section>
 
+<!-- Import Slide JS cdn -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/js/splide.min.js" integrity="sha256-esNVkEwsSpRc+USDUy7gWsyTZprX+CtOFMUgVq9JYnE=" crossorigin="anonymous"></script>
+<script>
+  var splide = new Splide( '.splide', {
+  type   : 'loop',
+  padding: { left: '30vw', right: '15vw' },
+  //perPage: 1,
+  /* focus  : 'center', */
+  pagination: false,
+  updateOnMove: true,
+} );
 
+splide.mount();
+</script>
 <?php
   // Get the footer
   get_footer();
