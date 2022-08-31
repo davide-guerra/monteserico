@@ -4,37 +4,7 @@ $footer_1_menu_name = /*(ICL_LANGUAGE_CODE == 'it') ? 'Top menu' :*/ 'Footer 1';
 $footer_2_menu_name = /*(ICL_LANGUAGE_CODE == 'it') ? 'Footer menu' :*/ 'Footer 2';
 $footer_3_menu_name = /*(ICL_LANGUAGE_CODE == 'it') ? 'Top menu' :*/ 'Footer 3';
 ?>
-<!-- Modulo contatti -->
-<!-- Hide if is template -->
-<?php if (is_front_page()) { ?>
-    <section class="max-w-7xl mx-auto px-4 py-4">
-        <h2 class="text-center text-maincolor mb-8 mt-8 lg:mt-12 text-4xl lg:text-4xl"><?php echo( (ICL_LANGUAGE_CODE == 'it') ? get_field('titolo_sezione_contatti', 8) : get_field('titolo_sezione_contatti', 21) ); ?></h2>
-        <div class="w-full lg:flex lg:flex-row bg-white lg::gap-8">
-            <div class="lg:basis-1/2 p-4 flex flex-col mx-0">
-        
-                <p class="text-left lg:text-lg lg:leading-8"><?php echo( (ICL_LANGUAGE_CODE == 'it') ? get_field('testo_sezione_contatti', 8) : get_field('testo_sezione_contatti', 21) ); ?></p>
-                <div class="mt-8 flex flex-col gap-2">
-                    <div class="flex flex-column items-start gap-2">
-                        <svg class="w-6 h-6 text-maincolor" style="margin-top: .15em;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                        <span class="lg:text-lg"><a href="<?php echo( get_field('link_indirizzo', 8) ); ?>" target="_blank" class="cursor-pointer hover:opacity-90"><?php echo( get_field('indirizzo', 8) ); ?></a></span>
-                    </div>
-                    <div class="flex flex-column items-center gap-2">
-                        <svg class="w-6 h-6 text-maincolor" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                        <span class="lg:text-lg"><a href="tel:<?php echo( str_replace(' ', '', get_field('telefono', 8)) ); ?>" class="cursor-pointer hover:opacity-90"><?php echo( get_field('telefono', 8) ); ?></a></span>
-                    </div>
-                    <div class="flex flex-column items-center gap-2">
-                        <svg class="w-6 h-6 text-maincolor" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        <span class="lg:text-lg"><a href="mailto:<?php echo( get_field('email', 8) ); ?>" class="cursor-pointer hover:opacity-90"><?php echo( get_field('email', 8) ); ?></a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="lg:basis-1/2 p-4 flex flex-col mx-0">
-                <?php $id_form = (ICL_LANGUAGE_CODE == 'it') ? '5' : '157'; ?>    
-                <?php echo(do_shortcode( '[contact-form-7 id="' . $id_form . '" title="Contact footer IT" html_class="grid grid-cols-2 gap-4"]' )); ?>
-            </div>
-        </div>
-    </section>
-<?php } ?>
+
 </div>
 <?php
 // Get the home ID. It will contains all infos abous email, address, phone, etc.
