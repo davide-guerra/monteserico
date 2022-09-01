@@ -15,32 +15,36 @@ global $post;
 $page_id = $post->ID;
 ?>
 
+<?php
+  $sliderLoop = new WP_Query(array(
+    'post_type' => 'home-slider',
+    'posts_per_page' => '1',
+    'post_status' => 'publish'
+  ));
+?>
+
+<?php if ($sliderLoop->have_posts()) { ?>
 <!-- Title and breadcrumbs area -->
 <section class="w-full">
     <div class="w-full relative aspect-[16/9] md:aspect-[7/3] 2xl:aspect-[7/2]">
-        <img src="<?php echo get_the_post_thumbnail_url($page_id, 'full'); ?>" class="w-full h-full object-cover brightness-75">
+      <?php while ( $sliderLoop->have_posts() ) { ?>
+        <img src="<?php echo the_post_thumbnail_url( 'full' ); ?>" class="w-full h-full object-cover brightness-75">
+      <?php } ?>
         <div class="absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 flex flex-col gap-4 z-10">
-            <h2 class="text-center text-white text-2xl lg:text-4xl"><?php the_title(); ?></h2>
-            <!-- Show bradcrumbs -->
-            <nav class="text-center text-white">
-              <a href="<?php echo( (ICL_LANGUAGE_CODE == 'it') ? '/' : '/en' ); ?>" class="hover:opacity-90">Home</a> >
-                <?php
-                    foreach (get_post_ancestors($page_id) as $ancestor) {
-                    ?>
-                    <a href="<?php echo(get_permalink($ancestor))?>" class="hover:opacity-90"><?php echo(get_the_title($ancestor))?></a> > 
-                    <?php
-                    }
-                ?>
-                <?php the_title(); ?>
-            </nav>
+            <h2 class="text-center text-white text-2xl lg:text-4xl"><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'ERRORE 404' : 'ERROR 404' ); ?></h2>
         </div>
     </div>
 </section>
+<?php } ?>
+<?php 
+  wp_reset_postdata();
+?> 
+
 
 <!-- Sezione full-width senza sfondo -->
 <section class="max-w-7xl mx-auto px-4 py-12">
-    <h2 class="text-center mb-8 mt-12 text-2xl lg:text-4xl font-bold">ERROR 404</h2>
-    <h2 class="text-center text-xl lg:text-3xl">Not found!</h2>
+
+    <h2 class="text-center text-xl lg:text-3xl"><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'Questa pagina non esiste!' : 'This page does not exist!' ); ?></h2>
 </section>
 
 
