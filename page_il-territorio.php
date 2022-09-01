@@ -68,7 +68,7 @@ $page_id = $post->ID;
 </section>
 
 <section class="w-full bg-white py-14">
-  <div style="max-width:100%; margin: 0 auto; position:relative;">
+  <div class="max-w-full my-0 mx-auto relative">
     <div class="splide" role="group" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
             <ul class="splide__list">
@@ -86,7 +86,7 @@ $page_id = $post->ID;
             </button>
       </div>
     </div>
-    <div style="position:absolute; left:1rem; top:1rem; width: 20vw;">
+    <div class="relative lg:absolute left-4 top-4 w-[20vw]">
       <?php echo( get_field('testo_slider') ); ?>
     </div>
   </div>

@@ -520,6 +520,14 @@ html {
   left: 50%;
 }
 
+.left-4 {
+  left: 1rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -593,6 +601,11 @@ html {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .mb-8 {
@@ -769,6 +782,10 @@ html {
   width: 3rem;
 }
 
+.w-\[20vw\] {
+  width: 20vw;
+}
+
 .min-w-\[12em\] {
   min-width: 12em;
 }
@@ -783,6 +800,10 @@ html {
 
 .max-w-4xl {
   max-width: 56rem;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-1 {
@@ -1205,6 +1226,10 @@ html {
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:z-10 {
     z-index: 10;
   }
