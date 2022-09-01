@@ -21,24 +21,19 @@ $page_id = $post->ID;
     'posts_per_page' => '1',
     'post_status' => 'publish'
   ));
+  error_log(print_r('ciao', true));
 ?>
 
-<?php if ($sliderLoop->have_posts()) { ?>
+
 <!-- Title and breadcrumbs area -->
 <section class="w-full">
     <div class="w-full relative aspect-[16/9] md:aspect-[7/3] 2xl:aspect-[7/2]">
-      <?php while ( $sliderLoop->have_posts() ) { ?>
-        <img src="<?php echo the_post_thumbnail_url( 'full' ); ?>" class="w-full h-full object-cover brightness-75">
-      <?php } ?>
+        <img src="img.jpm" class="w-full h-full object-cover brightness-75">
         <div class="absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 flex flex-col gap-4 z-10">
             <h2 class="text-center text-white text-2xl lg:text-4xl"><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'ERRORE 404' : 'ERROR 404' ); ?></h2>
         </div>
     </div>
 </section>
-<?php } ?>
-<?php 
-  wp_reset_postdata();
-?> 
 
 
 <!-- Sezione full-width senza sfondo -->
