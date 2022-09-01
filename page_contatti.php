@@ -31,6 +31,7 @@ $page_id = $post->ID;
 
 <section class="max-w-7xl mx-auto px-4 pt-0 pb-12">
     <h2 class="text-center text-maincolor mb-8 mt-12 text-4xl lg:text-4xl"><?php echo( (ICL_LANGUAGE_CODE == 'it') ? get_field('titolo_sezione_contatti', 8) : get_field('titolo_sezione_contatti', 21) ); ?></h2>
+    <div class="hidden bg-oro text-white cursor-pointer"></div>
     <?php $id_form = (ICL_LANGUAGE_CODE == 'it') ? '112' : '113'; ?>    
     <?php echo(do_shortcode( '[contact-form-7 id="' . $id_form . '" title="Contact footer IT" html_class="grid grid-cols-2 gap-4"]' )); ?>
 </section>

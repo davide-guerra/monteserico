@@ -860,6 +860,11 @@ html {
   background-color: transparent;
 }
 
+.bg-oro {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 158 103 / var(--tw-bg-opacity));
+}
+
 .bg-cover {
   background-size: cover;
 }
