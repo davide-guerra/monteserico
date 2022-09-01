@@ -67,6 +67,7 @@ $page_id = $post->ID;
   </div>
 </section>
 
+<!-- Seconda sezione: Slider -->
 <section class="w-full bg-white py-14">
   <div class="max-w-full my-0 mx-auto relative">
     <div class="splide" role="group" aria-label="Splide Basic HTML Example">
@@ -106,6 +107,45 @@ $page_id = $post->ID;
 
 splide.mount();
 </script>
+
+<!-- Banner -->
+<section style="background-image: url(<?php echo( get_field('immagine_banner_1') ); ?>);" class="w-full flex items-center justify-center bg-fixed bg-center bg-cover my-8">
+  <div class="max-w-7xl mx-auto px-4 py-36 flex flex-col gap-8 items-center col-start-1 row-start-1 row-end-15 lg:row-end-1">
+    <h2 class="text-4xl lg:text-6xl text-white text-center font-serif"><?php echo( get_field('testo_banner_1') ); ?></h2>
+  </div>
+</section>
+
+<!-- Terza sezione -->
+<section class="w-full bg-white py-14">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="w-full lg:grid lg:grid-cols-2 gap-8">
+      <div class="flex flex-col gap-4">
+        <h2 class="font-serif text-oro text-5xl font-bold"><?php echo( get_field('titolo_fascia_3') ); ?></h2>
+        <h3 class="font-serif text-oro text-3xl font-bold my-4"><?php echo( get_field('sottotitolo_fascia_3') ); ?></h3>
+        <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_3') ); ?>">
+      </div>
+      <div class="mt-4 lg:mt-0 flex flex-col gap-4">
+        <p><?php echo( get_field('testo_fascia_3') ); ?></p>
+      </div>
+    </div>
+    <div class="w-full mt-4 lg:mt-0 lg:flex lg:flex-col lg:items-end">
+      <img class="w-full lg:w-9/12" src="<?php echo( get_field('immagine_grande_fascia_3') ); ?>">
+    </div>
+  </div>
+</section>
+
+<!-- PQuarta sezione -->
+<section class="w-full bg-white py-14">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="w-full lg:grid lg:grid-cols-2 gap-8">
+      <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_4') ); ?>">
+      <div class="mt-4 lg:mt-0 flex flex-col gap-4">
+        <p><?php echo( get_field('testo_fascia_4') ); ?></p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <?php
   // Get the footer
   get_footer();
