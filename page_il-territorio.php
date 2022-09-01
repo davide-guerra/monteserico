@@ -72,9 +72,9 @@ $page_id = $post->ID;
     <div class="splide" role="group" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
             <ul class="splide__list">
-                <li class="splide__slide"><img src="<?php echo( get_field('slide_1') ); ?>"></li>
-                <li class="splide__slide"><img src="<?php echo( get_field('slide_2') ); ?>"></li>
-                <li class="splide__slide"><img src="<?php echo( get_field('slide_3') ); ?>"></li>
+                <li class="splide__slide"><img src="<?php echo( get_field('slide_1') ); ?>" class="aspect-video object-cover"></li>
+                <li class="splide__slide"><img src="<?php echo( get_field('slide_2') ); ?>" class="aspect-video object-cover"></li>
+                <li class="splide__slide"><img src="<?php echo( get_field('slide_3') ); ?>" class="aspect-video object-cover"></li>
             </ul>
         </div>
         <div class="splide__arrows">
