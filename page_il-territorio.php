@@ -72,9 +72,9 @@ $page_id = $post->ID;
     <div class="splide" role="group" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
             <ul class="splide__list">
-                <li class="splide__slide" style="background:red; padding:5rem">Slide 01</li>
-                <li class="splide__slide" style="background:green; padding:5rem">Slide 02</li>
-                <li class="splide__slide" style="background:blue; padding:5rem">Slide 03</li>
+                <li class="splide__slide"><img src="<?php echo( get_field('slide_1') ); ?>"></li>
+                <li class="splide__slide"><img src="<?php echo( get_field('slide_2') ); ?>"></li>
+                <li class="splide__slide"><img src="<?php echo( get_field('slide_3') ); ?>"></li>
             </ul>
         </div>
         <div class="splide__arrows">
@@ -86,7 +86,9 @@ $page_id = $post->ID;
             </button>
       </div>
     </div>
-    <div style="position:absolute; left:1rem; top:1rem; width: 20vw;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae ad cum asperiores repudiandae illo distinctio quo maxime odio quisquam officiis perspiciatis, placeat animi sed dolorem consequatur vitae voluptates? Cum, totam?</div>
+    <div style="position:absolute; left:1rem; top:1rem; width: 20vw;">
+      <?php echo( get_field('testo_slider') ); ?>
+    </div>
   </div>
 </section>
 
