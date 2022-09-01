@@ -21,7 +21,7 @@ $page_id = $post->ID;
     'posts_per_page' => '1',
     'post_status' => 'publish'
   ));
-  error_log(print_r('ciao', true));
+  error_log(print_r($sliderLoop, true));
 ?>
 
 
