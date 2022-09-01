@@ -28,7 +28,15 @@ $page_id = $post->ID;
 <!-- Title and breadcrumbs area -->
 <section class="w-full">
     <div class="w-full relative aspect-[16/9] md:aspect-[7/3] 2xl:aspect-[7/2]">
-        <img src="img.jpm" class="w-full h-full object-cover brightness-75">
+    <?php if ($sliderLoop->have_posts()) { ?>
+    <?php while ( $sliderLoop->have_posts() ) { ?>
+          <?php $sliderLoop->the_post(); ?>
+        <img src="<?php echo the_post_thumbnail_url( 'full' ); ?>" class="w-full h-full object-cover brightness-75">
+        <?php } ?>
+        <?php } ?>
+        <?php 
+  wp_reset_postdata();
+?> 
         <div class="absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 flex flex-col gap-4 z-10">
             <h2 class="text-center text-white text-2xl lg:text-4xl"><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'ERRORE 404' : 'ERROR 404' ); ?></h2>
         </div>
