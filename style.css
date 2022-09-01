@@ -1476,6 +1476,11 @@ html {
     padding-right: 3rem;
   }
 
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .lg\:pt-0 {
     padding-top: 0px;
   }
