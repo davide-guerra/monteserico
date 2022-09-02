@@ -1130,6 +1130,14 @@ html {
     top: 1rem;
   }
 
+  .lg\:left-0 {
+    left: 0px;
+  }
+
+  .lg\:top-0 {
+    top: 0px;
+  }
+
   .lg\:order-1 {
     order: 1;
   }
