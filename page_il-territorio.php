@@ -24,7 +24,7 @@ $page_id = $post->ID;
         background: none;
     }
     .splide__arrows {
-        margin-left: calc(30vw + 1rem);
+        margin-left: calc(40vw + 1rem);
         margin-right: calc(15vw - 1rem);
         display: flex;
         justify-content: space-between;
@@ -98,7 +98,7 @@ $page_id = $post->ID;
 <script>
   var splide = new Splide( '.splide', {
   type   : 'loop',
-  padding: { left: '30vw', right: '15vw' },
+  padding: { left: '40vw', right: '15vw' },
   //perPage: 1,
   /* focus  : 'center', */
   pagination: false,
