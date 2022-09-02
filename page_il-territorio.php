@@ -87,7 +87,7 @@ $page_id = $post->ID;
             </button>
       </div>
     </div>
-    <div class="relative px-4 lg:absolute lg:left-0 lg:top-0 lg:px-0 max-w-7xl mx-auto px-4">
+    <div class="relative px-4 lg:absolute lg:left-80 lg:top-4 lg:px-0 max-w-7xl mx-auto px-4">
       <div class="w-full lg:w-[20vw]">
     <!--<div class="relative px-4 lg:px-0 lg:absolute lg:left-4 lg:top-4 lg:w-[20vw]">-->
         <?php echo( get_field('testo_slider') ); ?>

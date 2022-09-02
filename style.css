@@ -1138,6 +1138,10 @@ html {
     top: 0px;
   }
 
+  .lg\:left-80 {
+    left: 20rem;
+  }
+
   .lg\:order-1 {
     order: 1;
   }
