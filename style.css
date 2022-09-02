@@ -1142,6 +1142,10 @@ html {
     left: 20rem;
   }
 
+  .lg\:left-\[17vw\] {
+    left: 17vw;
+  }
+
   .lg\:order-1 {
     order: 1;
   }
