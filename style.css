@@ -570,14 +570,14 @@ html {
   margin-right: 1rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .my-0 {
@@ -1004,16 +1004,6 @@ html {
   line-height: 2.5rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -1122,64 +1112,16 @@ html {
     position: absolute;
   }
 
-  .lg\:left-4 {
-    left: 1rem;
+  .lg\:left-\[17vw\] {
+    left: 17vw;
   }
 
   .lg\:top-4 {
     top: 1rem;
   }
 
-  .lg\:left-0 {
-    left: 0px;
-  }
-
-  .lg\:top-0 {
-    top: 0px;
-  }
-
-  .lg\:left-80 {
-    left: 20rem;
-  }
-
-  .lg\:left-\[17vw\] {
-    left: 17vw;
-  }
-
   .lg\:order-1 {
     order: 1;
-  }
-
-  .lg\:col-start-6 {
-    grid-column-start: 6;
-  }
-
-  .lg\:col-start-1 {
-    grid-column-start: 1;
-  }
-
-  .lg\:col-end-8 {
-    grid-column-end: 8;
-  }
-
-  .lg\:col-end-9 {
-    grid-column-end: 9;
-  }
-
-  .lg\:row-start-1 {
-    grid-row-start: 1;
-  }
-
-  .lg\:row-start-2 {
-    grid-row-start: 2;
-  }
-
-  .lg\:row-end-4 {
-    grid-row-end: 4;
-  }
-
-  .lg\:row-end-11 {
-    grid-row-end: 11;
   }
 
   .lg\:row-end-1 {
@@ -1223,14 +1165,6 @@ html {
     aspect-ratio: 4 / 3;
   }
 
-  .lg\:aspect-\[21\/6\] {
-    aspect-ratio: 21 / 6;
-  }
-
-  .lg\:aspect-\[21\/8\] {
-    aspect-ratio: 21 / 8;
-  }
-
   .lg\:h-\[100vh\] {
     height: 100vh;
   }
@@ -1255,10 +1189,6 @@ html {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-8 {
-    grid-template-columns: repeat(8, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1273,6 +1203,10 @@ html {
 
   .lg\:flex-col {
     flex-direction: column;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
   }
 
   .lg\:items-end {
@@ -1332,10 +1266,6 @@ html {
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
-  }
-
-  .lg\:leading-\[3rem\] {
-    line-height: 3rem;
   }
 }
 
