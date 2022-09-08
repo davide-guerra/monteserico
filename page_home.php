@@ -37,7 +37,7 @@ $page_id = $post->ID;
                <?php } ?>
               <?php  if (is_array($meta) && isset($meta['button']) && strlen($meta['button'])>0 ){ ?>
                 <div>
-                  <a href="<?php echo('/' . $meta['slug']); ?>" class="mt-4 text-white text-xl hover:opacity-90 inline-block border border-white px-4 py-2">
+                  <a href="<?php echo('/' . $meta['slug']); ?>" class="mt-12 text-white text-xl hover:opacity-90 inline-block border border-white px-4 py-2">
                   <div class="flex flex-row gap-2 items-center">
                     <span class="font-light"><?php echo($meta['button']); ?></span>
                   </div>
