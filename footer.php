@@ -38,18 +38,16 @@ $home_id = get_option('page_on_front');
                 <?php } ?>
             </div>
             <!-- Terza colonna: privacy -->
-            <div class="text-white text-center">
-                Privacy policy<br>
-                Impostazioni cookie
+            <div class="flex flex-col gap-2 text-center">
+                <a href="<?php echo( get_privacy_policy_url() ); ?>" target="_blank" class="cursor-pointer text-white hover:opacity-90">Privacy policy</a>
+                <a href="javascript:void(0);" aria-label="View cookie settings" data-cc="c-settings" aria-haspopup="dialog" class="cursor-pointer text-white hover:opacity-90"><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'IMPOSTAZIONI COOKIE' : 'COOKIE SETTINGS' ); ?></a>
             </div>     
         </div>
     </div>
     <div class="block text-center lg:flex lg:justify-between max-w-7xl mx-auto py-4 border-t border-white text-white text-xs mt-4">
         <div class="flex flex-col lg:flex-row"><span>&copy; <?php echo(date('Y')); ?> Monteserico.</span><span class="hidden lg:inline">&nbsp;</span><span><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'Tutti i diritti riservati.' : 'All rights reserved.' ); ?></span></div>
         <div class="flex flex-col lg:flex-row">
-            <a href="<?php echo( get_privacy_policy_url() ); ?>" target="_blank" class="hover:opacity-90 text-xs">PRIVACY POLICY</a>
-            <span class="hidden lg:inline pl-2 pr-2"> | </span>
-            <a href="javascript:void(0);" aria-label="View cookie settings" data-cc="c-settings" aria-haspopup="dialog" class="hover:opacity-90 text-xs"><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'IMPOSTAZIONI COOKIE' : 'COOKIE SETTINGS' ); ?></a>
+            <a href="https://elaboranext.com" target="_blank" class="hover:opacity-90 text-xs">Credits</a>
         </div>
     </div>
 </footer>
