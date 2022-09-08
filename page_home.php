@@ -117,6 +117,14 @@ $page_id = $post->ID;
     <div class="w-full mt-4 lg:mt-0 lg:flex lg:flex-col lg:items-start">
       <img class="w-full lg:w-9/12" src="<?php echo( get_field('immagine_grande_fascia_2') ); ?>">
     </div>
+    <div class="w-full lg:w-4/12 mt-4">
+      <?php if( !empty(get_field('secondo_sottotitolo_fascia_3')) ) { ?>
+        <h3 class="font-serif text-oro text-3xl font-bold mb-4"><?php echo( get_field('secondo_sottotitolo_fascia_3') ); ?></h3>
+      <?php } ?>
+      <?php if( !empty(get_field('secondo_testo_fascia_3')) ) { ?>
+        <p class="mb-4"><?php echo( get_field('secondo_testo_fascia_3') ); ?></p>
+      <?php } ?>
+    </div>
   </div>
 </section>
 

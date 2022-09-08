@@ -1197,6 +1197,10 @@ html {
     width: 12rem;
   }
 
+  .lg\:w-4\/12 {
+    width: 33.333333%;
+  }
+
   .lg\:basis-1\/2 {
     flex-basis: 50%;
   }
