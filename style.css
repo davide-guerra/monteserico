@@ -1105,6 +1105,10 @@ html {
   .md\:w-32 {
     width: 8rem;
   }
+
+  .md\:w-72 {
+    width: 18rem;
+  }
 }
 
 @media (min-width: 1024px) {
