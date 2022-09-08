@@ -55,7 +55,7 @@ $home_id = get_option('page_on_front');
             interval: 5000,
             pauseOnHover: false,
             width : '100vw',
-            height: '75vh',
+            height: '100vh',
             breakpoints: {
 		        1023: {
 			        height: '100vh',
