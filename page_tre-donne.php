@@ -12,8 +12,8 @@ $page_id = $post->ID;
 <section class="w-full">
     <div class="w-full relative aspect-[16/9] md:aspect-[7/3] 2xl:aspect-[7/2]">
         <img src="<?php echo get_the_post_thumbnail_url($page_id, 'full'); ?>" class="w-full h-full object-cover brightness-75">
-        <div class="absolute left-1/2 -translate-x-2/4 z-10">
-            <h2 class="font-serif text-center text-white text-2xl lg:text-4xl"><?php the_title(); ?></h2>
+        <div class="absolute bottom-0 left-1/2 -translate-x-2/4 z-10 mb-8">
+            <h2 class="font-serif text-center text-white text-2xl lg:text-6xl"><?php the_title(); ?></h2>
             <!-- Show bradcrumbs -->
             <nav class="text-center text-white">
               <a href="<?php echo( (ICL_LANGUAGE_CODE == 'it') ? '/' : '/en' ); ?>" class="hover:opacity-90">Home</a> >
