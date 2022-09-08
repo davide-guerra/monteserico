@@ -132,7 +132,7 @@ splide.mount();
     </div>
     <div class="w-full lg:grid lg:grid-cols-2 gap-0">
         <div class="mt-4 lg:mt-0 flex flex-col gap-4">
-            <p class="mt-0 lg:mt-8 mr-0 lg:mr-8"><?php echo( get_field('testo_fascia_4') ); ?></p>
+            <p class="mt-0 mb-4 lg:mb-0 lg:mt-8 mr-0 lg:mr-8"><?php echo( get_field('testo_fascia_4') ); ?></p>
       </div>
       <div class="flex flex-col gap-4">
         <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_4') ); ?>">
