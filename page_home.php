@@ -96,10 +96,10 @@ $page_id = $post->ID;
 <section class="w-full bg-white py-14">
   <div class="max-w-7xl mx-auto px-4">
     <?php if( !empty(get_field('titolo_fascia_2')) ) { ?>
-      <h2 class="font-serif text-oro text-5xl font-bold"><?php echo( get_field('titolo_fascia_2') ); ?></h2>
+      <h2 class="font-serif text-oro text-5xl font-bold mb-4"><?php echo( get_field('titolo_fascia_2') ); ?></h2>
     <?php } ?>
     <?php if( !empty(get_field('sottotitolo_fascia_2')) ) { ?>
-      <h3 class="font-serif text-oro text-3xl font-bold my-4"><?php echo( get_field('sottotitolo_fascia_2') ); ?></h3>
+      <h3 class="font-serif text-oro text-3xl font-bold mb-4"><?php echo( get_field('sottotitolo_fascia_2') ); ?></h3>
     <?php } ?>
     <div class="w-full lg:grid lg:grid-cols-2 gap-8">
       <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_2') ); ?>">

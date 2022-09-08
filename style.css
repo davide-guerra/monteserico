@@ -1247,6 +1247,11 @@ html {
     padding-right: 0px;
   }
 
+  .lg\:py-52 {
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+  }
+
   .lg\:pt-0 {
     padding-top: 0px;
   }
