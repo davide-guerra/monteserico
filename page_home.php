@@ -122,7 +122,7 @@ $page_id = $post->ID;
         <h3 class="font-serif text-oro text-3xl font-bold mb-4"><?php echo( get_field('secondo_sottotitolo_fascia_3') ); ?></h3>
       <?php } ?>
       <?php if( !empty(get_field('secondo_testo_fascia_3')) ) { ?>
-        <p class="mb-4"><?php echo( get_field('secondo_testo_fascia_3') ); ?></p>
+        <p><?php echo( get_field('secondo_testo_fascia_3') ); ?></p>
       <?php } ?>
     </div>
   </div>
