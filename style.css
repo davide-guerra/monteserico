@@ -1247,6 +1247,10 @@ html {
     padding-top: 0px;
   }
 
+  .lg\:pt-8 {
+    padding-top: 2rem;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
