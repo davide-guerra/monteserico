@@ -532,6 +532,10 @@ html {
   z-index: 50;
 }
 
+.z-\[8\] {
+  z-index: 8;
+}
+
 .order-2 {
   order: 2;
 }
