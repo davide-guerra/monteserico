@@ -33,13 +33,13 @@ $page_id = $post->ID;
               <?php if ( strlen($meta['text'])>0 || strlen($meta['button'])>0 ) { ?>
               <div class="p-8 absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 w-3/4 flex flex-col items-center">
               <?php  if (is_array($meta) && isset($meta['text']) && strlen($meta['text'])>0 ){ ?>
-                <h2 class="text-center text-white text-4xl xl:text-7xl font-light"><?php echo($meta['text']); ?></h2> 
+                <h2 class="text-center text-white text-4xl xl:text-7xl font-light font-serif"><?php echo($meta['text']); ?></h2> 
                <?php } ?>
               <?php  if (is_array($meta) && isset($meta['button']) && strlen($meta['button'])>0 ){ ?>
                 <div>
                   <a href="<?php echo('/' . $meta['slug']); ?>" class="mt-4 text-white text-xl hover:opacity-90 inline-block border border-white px-4 py-2">
                   <div class="flex flex-row gap-2 items-center">
-                    <span class="font-thin"><?php echo($meta['button']); ?></span>
+                    <span class="font-light"><?php echo($meta['button']); ?></span>
                   </div>
                   </a>
                 </div>
