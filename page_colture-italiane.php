@@ -122,7 +122,7 @@ splide.mount();
 <!-- Terza sezione -->
 <section class="w-full bg-white py-14">
   <div class="max-w-7xl mx-auto px-4">
-    <div class="w-full lg:grid lg:grid-cols-2 gap-8">
+    <div class="w-full lg:grid lg:grid-cols-2 gap-0">
       <div class="flex flex-col gap-4">
         <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_3') ); ?>">
       </div>
@@ -130,7 +130,7 @@ splide.mount();
         <p><?php echo( get_field('testo_fascia_3') ); ?></p>
       </div>
     </div>
-    <div class="w-full lg:grid lg:grid-cols-2 gap-8">
+    <div class="w-full lg:grid lg:grid-cols-2 gap-0">
         <div class="mt-4 lg:mt-0 flex flex-col gap-4">
             <p><?php echo( get_field('testo_fascia_4') ); ?></p>
       </div>
