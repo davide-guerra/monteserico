@@ -27,11 +27,15 @@ $home_id = get_option('page_on_front');
                 </a>
             </div>
             <!-- Seconda colonna: menu -->
-            <div class="text-white text-center">
-                Tre donne<br>
-                Colture italiane<br>
-                Il territorio<br>
-                Contatti
+            <?php
+            // Define the menus name based on WPML selected language
+            $top_menu_name = /*(ICL_LANGUAGE_CODE == 'it') ? 'Top menu' :*/ 'Top menu';
+            ?>
+            <div class="flex flex-col gap-2 text-center">
+                <?php $menu_array = wp_get_menu_array($top_menu_name); // The wp_get_menu_array() function is defined in /inc/get_menu_as_array.php ?>
+                <?php foreach ($menu_array as $item){ ?>
+                   <a href="<?php echo $item['url']; ?>" class="cursor-pointer text-white hover:opacity-90"><?php echo $item['title']; ?></a>
+                <?php } ?>
             </div>
             <!-- Terza colonna: privacy -->
             <div class="text-white text-center">
