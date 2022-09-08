@@ -108,7 +108,7 @@ $page_id = $post->ID;
         <div>
           <a href="<?php echo( get_field('link_bottone_fascia_2') ); ?>" class="hover:opacity-90 inline-block border border-current px-4 py-2">
           <div class="flex flex-row gap-2 items-center">
-            <span><?php echo( get_field('testo_bottone_fascia_2') ); ?></span>
+            <span class="font-light"><?php echo( get_field('testo_bottone_fascia_2') ); ?></span>
           </div>
           </a>
         </div>
@@ -122,7 +122,7 @@ $page_id = $post->ID;
 
 <!-- Secondo banner -->
 <section style="background-image: url(<?php echo( get_field('immagine_banner_2') ); ?>);" class="w-full flex items-center justify-center bg-fixed bg-center bg-cover my-8">
-  <div class="max-w-7xl mx-auto px-4 py-36 flex flex-col gap-8 items-center col-start-1 row-start-1 row-end-15 lg:row-end-1">
+  <div class="max-w-7xl mx-auto px-4 py-36 lg:py-52 flex flex-col gap-8 items-center col-start-1 row-start-1 row-end-15 lg:row-end-1">
     <h2 class="text-4xl lg:text-6xl text-white text-center font-serif"><?php echo( get_field('testo_banner_2') ); ?></h2>
   </div>
 </section>
@@ -131,10 +131,10 @@ $page_id = $post->ID;
 <section class="w-full bg-white py-14">
   <div class="max-w-7xl mx-auto px-4">
     <?php if( !empty(get_field('titolo_fascia_3')) ) { ?>
-      <h2 class="font-serif text-oro text-5xl font-bold"><?php echo( get_field('titolo_fascia_3') ); ?></h2>
+      <h2 class="font-serif text-oro text-5xl font-bold mb-4"><?php echo( get_field('titolo_fascia_3') ); ?></h2>
     <?php } ?>
     <?php if( !empty(get_field('sottotitolo_fascia_3')) ) { ?>
-      <h3 class="font-serif text-oro text-3xl font-bold my-4"><?php echo( get_field('sottotitolo_fascia_3') ); ?></h3>
+      <h3 class="font-serif text-oro text-3xl font-bold mb-4"><?php echo( get_field('sottotitolo_fascia_3') ); ?></h3>
     <?php } ?>
     <div class="w-full lg:grid lg:grid-cols-2 gap-8">
       <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_3') ); ?>">
@@ -143,7 +143,7 @@ $page_id = $post->ID;
         <div>
           <a href="<?php echo( get_field('link_bottone_fascia_3') ); ?>" class="hover:opacity-90 inline-block border border-current px-4 py-2">
           <div class="flex flex-row gap-2 items-center">
-            <span><?php echo( get_field('testo_bottone_fascia_3') ); ?></span>
+            <span class="font-light"><?php echo( get_field('testo_bottone_fascia_3') ); ?></span>
           </div>
           </a>
         </div>
