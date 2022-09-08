@@ -40,7 +40,7 @@ $home_id = get_option('page_on_front');
             <!-- Terza colonna: privacy -->
             <div class="flex flex-col gap-2 text-center">
                 <a href="<?php echo( get_privacy_policy_url() ); ?>" target="_blank" class="cursor-pointer text-white hover:opacity-90">Privacy policy</a>
-                <a href="javascript:void(0);" aria-label="View cookie settings" data-cc="c-settings" aria-haspopup="dialog" class="cursor-pointer text-white hover:opacity-90"><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'IMPOSTAZIONI COOKIE' : 'COOKIE SETTINGS' ); ?></a>
+                <a href="javascript:void(0);" aria-label="View cookie settings" data-cc="c-settings" aria-haspopup="dialog" class="cursor-pointer text-white hover:opacity-90"><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'Impostazioni cookie' : 'Cookie settings' ); ?></a>
             </div>     
         </div>
     </div>
