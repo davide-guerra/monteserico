@@ -15,7 +15,7 @@ $page_id = $post->ID;
         <div class="absolute bottom-0 left-1/2 -translate-x-2/4 z-10 mb-8">
             <h2 class="font-serif text-center text-white text-2xl lg:text-6xl"><?php the_title(); ?></h2>
             <!-- Show bradcrumbs -->
-            <nav class="text-center text-white">
+            <nav class="text-center text-white mt-4">
               <a href="<?php echo( (ICL_LANGUAGE_CODE == 'it') ? '/' : '/en' ); ?>" class="hover:opacity-90">Home</a> >
                 <?php
                     foreach (get_post_ancestors($page_id) as $ancestor) {
