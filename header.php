@@ -38,7 +38,12 @@ $home_id = get_option('page_on_front');
             }
         </style>
     <?php //} ?>
-    <style>[x-cloak] { display: none !important; }</style>
+    <style>
+        [x-cloak] { display: none !important; }
+        .wpml-ls-legacy-list-horizontal {
+            padding: 0;
+        }
+    </style>
     <?php if (is_front_page()) { ?>
         <title><?php echo( get_bloginfo( 'name' ) . ' | ' . get_bloginfo('description') ); ?></title>
     <?php } else { ?>
