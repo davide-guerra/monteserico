@@ -1281,6 +1281,13 @@ html {
   }
 }
 
+@media (min-width: 1280px) {
+  .xl\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
 @media (min-width: 1536px) {
   .\32xl\:aspect-\[7\/2\] {
     aspect-ratio: 7 / 2;
