@@ -95,26 +95,26 @@ $page_id = $post->ID;
 <!-- Seconda fascia -->
 <section class="w-full bg-white py-14">
   <div class="max-w-7xl mx-auto px-4">
-    <?php if( !empty(get_field('titolo_fascia_2')) ) { ?>
-      <h2 class="font-serif text-oro text-5xl font-bold mb-4"><?php echo( get_field('titolo_fascia_2') ); ?></h2>
-    <?php } ?>
-    <?php if( !empty(get_field('sottotitolo_fascia_2')) ) { ?>
-      <h3 class="font-serif text-oro text-3xl font-bold mb-4"><?php echo( get_field('sottotitolo_fascia_2') ); ?></h3>
-    <?php } ?>
     <div class="w-full lg:grid lg:grid-cols-2 gap-8">
-      <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_2') ); ?>">
-      <div class="mt-4 lg:mt-0 flex flex-col gap-4">
+      <div>
+        <?php if( !empty(get_field('titolo_fascia_2')) ) { ?>
+          <h2 class="font-serif text-oro text-5xl font-bold mb-4"><?php echo( get_field('titolo_fascia_2') ); ?></h2>
+        <?php } ?>
+        <?php if( !empty(get_field('sottotitolo_fascia_2')) ) { ?>
+          <h3 class="font-serif text-oro text-3xl font-bold mb-4"><?php echo( get_field('sottotitolo_fascia_2') ); ?></h3>
+        <?php } ?>
+      </div>
+      <div class="flex flex-col gap-4 mt-4 lg:mt-0">
         <p><?php echo( get_field('testo_fascia_2') ); ?></p>
-        <div>
-          <a href="<?php echo( get_field('link_bottone_fascia_2') ); ?>" class="hover:opacity-90 inline-block border border-current px-4 py-2">
+        <a href="<?php echo( get_field('link_bottone_fascia_2') ); ?>" class="hover:opacity-90 inline-block border border-current px-4 py-2">
           <div class="flex flex-row gap-2 items-center">
             <span class="font-light"><?php echo( get_field('testo_bottone_fascia_2') ); ?></span>
           </div>
-          </a>
-        </div>
+        </a>
+        <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_2') ); ?>">
       </div>
     </div>
-    <div class="w-full mt-4 lg:mt-0 lg:flex lg:flex-col lg:items-end">
+    <div class="w-full mt-4 lg:mt-0 lg:flex lg:flex-col lg:items-start">
       <img class="w-full lg:w-9/12" src="<?php echo( get_field('immagine_grande_fascia_2') ); ?>">
     </div>
   </div>

@@ -138,7 +138,7 @@ splide.mount();
       </div>
     </div>
     <div class="w-full mt-4 lg:mt-0 lg:flex lg:flex-col lg:items-start">
-      <img class="w-full lg:w-9/12" src="<?php echo( get_field('immagine_grande_fascia_3') ); ?>">
+      <img class="w-full lg:w-9/12 ciao" src="<?php echo( get_field('immagine_grande_fascia_3') ); ?>">
     </div>
   </div>
 </section>
