@@ -39,7 +39,7 @@ $page_id = $post->ID;
                 <div>
                   <a href="<?php echo('/' . $meta['slug']); ?>" class="mt-4 text-white text-xl hover:opacity-90 inline-block border border-white px-4 py-2">
                   <div class="flex flex-row gap-2 items-center">
-                    <span><?php echo($meta['button']); ?></span>
+                    <span class="font-thin"><?php echo($meta['button']); ?></span>
                   </div>
                   </a>
                 </div>
