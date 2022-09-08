@@ -127,12 +127,12 @@ splide.mount();
         <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_3') ); ?>">
       </div>
       <div class="mt-4 lg:mt-0 flex flex-col gap-4">
-        <p><?php echo( get_field('testo_fascia_3') ); ?></p>
+        <p class="ml-0 lg:ml-8"><?php echo( get_field('testo_fascia_3') ); ?></p>
       </div>
     </div>
     <div class="w-full lg:grid lg:grid-cols-2 gap-0">
         <div class="mt-4 lg:mt-0 flex flex-col gap-4">
-            <p><?php echo( get_field('testo_fascia_4') ); ?></p>
+            <p class="mr-0 lg:mr-8"><?php echo( get_field('testo_fascia_4') ); ?></p>
       </div>
       <div class="flex flex-col gap-4">
         <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_4') ); ?>">
