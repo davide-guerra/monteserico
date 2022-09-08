@@ -35,7 +35,10 @@ $page_id = $post->ID;
   <div class="max-w-7xl mx-auto px-4">
     <div class="w-full lg:grid lg:grid-cols-2 gap-8">
       <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_1') ); ?>">
-      <div class="mt-4 lg:mt-0 flex flex-col gap-4">
+      <div class="mt-4 lg:mt-0 flex flex-col">
+        <?php if( !empty(get_field('titolo_fascia_1')) ) { ?>
+          <h2 class="font-serif text-oro text-5xl font-bold mb-4"><?php echo( get_field('titolo_fascia_1') ); ?></h2>
+        <?php } ?>
         <p><?php echo( get_field('testo_fascia_1') ); ?></p>
       </div>
     </div>
