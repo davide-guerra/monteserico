@@ -91,7 +91,7 @@ $home_id = get_option('page_on_front');
                             <?php $menu_array = wp_get_menu_array($top_menu_name); // The wp_get_menu_array() function is defined in /inc/get_menu_as_array.php ?>
                             <?php foreach ($menu_array as $item){ ?>
                                 <li class="mobile-menu-item relative" x-data="{showSub: false}">
-                                    <a class="inline-block font-bold text-white no-underline relative flex flex-column items-center gap-2 hover:opacity-90" href="<?php echo $item['url']; ?>"
+                                    <a class="inline-block font-bold text-white no-underline relative flex flex-column items-center gap-2 hover:opacity-90 uppercase" href="<?php echo $item['url']; ?>"
                                         <?php if ($item['children']) { ?>
                                             @click="event.preventDefault(); showSub = ! showSub"
                                         <?php } ?>
@@ -131,7 +131,7 @@ $home_id = get_option('page_on_front');
                     <?php $menu_array = wp_get_menu_array($top_menu_name); // The wp_get_menu_array() function is defined in /inc/get_menu_as_array.php ?>
                     <?php foreach ($menu_array as $item){ ?>
                         <li class="large-menu-item relative" x-data="{showSub: false}">
-                            <a class="inline-block no-underline relative flex flex-column items-center gap-2 hover:opacity-90" href="<?php echo $item['url']; ?>"
+                            <a class="inline-block no-underline relative flex flex-column items-center gap-2 hover:opacity-90 uppercase" href="<?php echo $item['url']; ?>"
                                 <?php if ($item['children']) { ?>
                                     @click="event.preventDefault(); showSub = ! showSub"
                                 <?php } ?>
@@ -180,7 +180,7 @@ $home_id = get_option('page_on_front');
                             <?php $menu_array = wp_get_menu_array($top_menu_name); // The wp_get_menu_array() function is defined in /inc/get_menu_as_array.php ?>
                             <?php foreach ($menu_array as $item){ ?>
                                 <li class="large-menu-item relative" x-data="{showSub: false}">
-                                    <a class="inline-block no-underline relative flex flex-column items-center gap-2 hover:opacity-90" href="<?php echo $item['url']; ?>"
+                                    <a class="inline-block no-underline relative flex flex-column items-center gap-2 hover:opacity-90 uppercase" href="<?php echo $item['url']; ?>"
                                         <?php if ($item['children']) { ?>
                                             @click="event.preventDefault(); showSub = ! showSub"
                                         <?php } ?>
@@ -215,7 +215,7 @@ $home_id = get_option('page_on_front');
                             <?php $menu_array = wp_get_menu_array($top_menu_name); // The wp_get_menu_array() function is defined in /inc/get_menu_as_array.php ?>
                             <?php foreach ($menu_array as $item){ ?>
                                 <li class="mobile-menu-item relative" x-data="{showSub: false}">
-                                    <a class="inline-block font-bold text-white no-underline relative flex flex-column items-center gap-2 hover:opacity-90" href="<?php echo $item['url']; ?>"
+                                    <a class="inline-block font-bold text-white no-underline relative flex flex-column items-center gap-2 hover:opacity-90 uppercase" href="<?php echo $item['url']; ?>"
                                         <?php if ($item['children']) { ?>
                                             @click="event.preventDefault(); showSub = ! showSub"
                                         <?php } ?>
