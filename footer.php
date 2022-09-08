@@ -27,11 +27,9 @@ $home_id = get_option('page_on_front');
                 </a>
             </div>
             <!-- Seconda colonna: menu -->
-                Lorem
+            <div>Lorem</div>
             <!-- Terza colonna: privacy -->
-                lorem
-           
-            
+            <div>Lorem</div>     
         </div>
     </div>
     <div class="block text-center lg:flex lg:justify-between max-w-7xl mx-auto py-4 border-t border-white text-white text-xs mt-4">
