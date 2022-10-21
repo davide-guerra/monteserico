@@ -20,7 +20,7 @@ $home_id = get_option('page_on_front');
                     <?php echo( get_field('indirizzo', $home_id) ); ?>
                 </a>
                 <a href="tel:<?php echo( str_replace(' ', '', get_field('telefono', $home_id)) ); ?>" class="cursor-pointer text-white hover:opacity-90">
-                    <?php echo( get_field('telefono', $home_id) ); ?>
+                <?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'Tel' : 'Ph' ); ?>. <?php echo( get_field('telefono', $home_id) ); ?>
                 </a>
                 <a href="mailto:<?php echo( get_field('email', $home_id) ); ?>" class="cursor-pointer text-white hover:opacity-90">
                     <?php echo( get_field('email', $home_id) ); ?>
