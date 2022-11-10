@@ -103,14 +103,14 @@ $page_id = $post->ID;
         <?php if( !empty(get_field('sottotitolo_fascia_2')) ) { ?>
           <h3 class="font-serif text-oro text-3xl font-bold mb-4"><?php echo( get_field('sottotitolo_fascia_2') ); ?></h3>
         <?php } ?>
+          <p><?php echo( get_field('testo_fascia_2') ); ?></p>
+          <a href="<?php echo( get_field('link_bottone_fascia_2') ); ?>" class="hover:opacity-90 inline-block border border-current px-4 py-2 my-4">
+            <div class="flex flex-row gap-2 items-center">
+              <span class="font-light"><?php echo( get_field('testo_bottone_fascia_2') ); ?></span>
+            </div>
+          </a>
       </div>
       <div class="mt-4 lg:mt-0">
-        <p><?php echo( get_field('testo_fascia_2') ); ?></p>
-        <a href="<?php echo( get_field('link_bottone_fascia_2') ); ?>" class="hover:opacity-90 inline-block border border-current px-4 py-2 my-4">
-          <div class="flex flex-row gap-2 items-center">
-            <span class="font-light"><?php echo( get_field('testo_bottone_fascia_2') ); ?></span>
-          </div>
-        </a>
         <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_2') ); ?>">
       </div>
     </div>
