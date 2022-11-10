@@ -153,8 +153,10 @@ splide.mount();
 <section class="w-full bg-white py-14">
   <div class="max-w-7xl mx-auto px-4">
     <div class="w-full lg:grid lg:grid-cols-2 gap-8">
-      <h3 class="font-serif text-oro text-3xl font-bold mb-4"><?php echo( get_field('secondo_titolo_fascia_4') ); ?></h3>
-      <p><?php echo( get_field('testo_fascia_4') ); ?></p>
+      <div>
+        <h3 class="font-serif text-oro text-3xl font-bold mb-4"><?php echo( get_field('secondo_titolo_fascia_4') ); ?></h3>
+        <p><?php echo( get_field('testo_fascia_4') ); ?></p>
+      </div>
       <div class="mt-4 lg:mt-0 flex flex-col gap-4">
         <p><?php echo( get_field('secondo_testo_fascia_4') ); ?></p>
         <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_4') ); ?>">
