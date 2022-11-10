@@ -63,7 +63,7 @@ $page_id = $post->ID;
       <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_1') ); ?>">
       <div class="mt-4 lg:mt-0 flex flex-col gap-4">
         <?php if( !empty(get_field('titolo_fascia_1')) ) { ?>
-          <h2 class="font-serif text-5xl font-bold"><?php echo( get_field('titolo_fascia_1') ); ?></h2>
+          <h2 class="font-serif text-oro text-5xl font-bold"><?php echo( get_field('titolo_fascia_1') ); ?></h2>
         <?php } ?>
         <p><?php echo( get_field('testo_fascia_1') ); ?></p>
       </div>
@@ -93,7 +93,7 @@ $page_id = $post->ID;
     </div>
     <div class="relative px-4 lg:absolute lg:left-[17vw] lg:top-4 lg:px-0 max-w-7xl mx-auto px-4">
       <div class="w-full lg:w-[20vw]">
-        <h2 class="font-serif text-5xl font-bold mb-4"><?php echo( get_field('titolo_slider') ); ?></h2>
+        <h2 class="font-serif text-oro text-5xl font-bold mb-4"><?php echo( get_field('titolo_slider') ); ?></h2>
         <?php echo( get_field('testo_slider') ); ?>
       </div>
     </div>
@@ -135,8 +135,8 @@ splide.mount();
   <div class="max-w-7xl mx-auto px-4">
     <div class="w-full lg:grid lg:grid-cols-2 gap-8">
       <div class="flex flex-col gap-4">
-        <h2 class="font-serif text-5xl font-bold"><?php echo( get_field('titolo_fascia_3') ); ?></h2>
-        <h3 class="font-serif text-3xl font-bold my-4"><?php echo( get_field('sottotitolo_fascia_3') ); ?></h3>
+        <h2 class="font-serif text-oro text-5xl font-bold"><?php echo( get_field('titolo_fascia_3') ); ?></h2>
+        <h3 class="font-serif text-oro text-3xl font-bold my-4"><?php echo( get_field('sottotitolo_fascia_3') ); ?></h3>
         <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_3') ); ?>">
       </div>
       <div class="mt-4 lg:mt-0 flex flex-col gap-4">
@@ -153,7 +153,7 @@ splide.mount();
 <section class="w-full bg-white py-14">
   <div class="max-w-7xl mx-auto px-4">
     <div class="w-full lg:w-4/12">
-      <h3 class="font-serif text-3xl font-bold mb-4"><?php echo( get_field('secondo_titolo_fascia_4') ); ?></h3>
+      <h3 class="font-serif text-oro text-3xl font-bold mb-4"><?php echo( get_field('secondo_titolo_fascia_4') ); ?></h3>
     </div>
     <div class="w-full lg:grid lg:grid-cols-2 gap-8">
       <p><?php echo( get_field('testo_fascia_4') ); ?></p>
