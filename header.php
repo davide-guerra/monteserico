@@ -1,7 +1,7 @@
 <?php
-if(!is_user_logged_in()){
-    header("Location: https://monteserico.it/coming-soon.html");
-}
+//if(!is_user_logged_in()){
+//    header("Location: https://monteserico.it/coming-soon.html");
+//}
 // Define the menus name based on WPML selected language
 $top_menu_name = /*(ICL_LANGUAGE_CODE == 'it') ? 'Top menu' :*/ 'Top menu';
 //$mobile_menu_name = /*(ICL_LANGUAGE_CODE == 'it') ? 'Footer menu' :*/ 'Mobile menu';
@@ -36,6 +36,9 @@ $home_id = get_option('page_on_front');
             button.splide__arrow svg {
                 fill: #fff;
             }
+			.lg-backdrop.in {
+				opacity: .85;
+			}
         </style>
     <?php //} ?>
     <style>

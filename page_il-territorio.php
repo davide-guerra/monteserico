@@ -17,6 +17,7 @@ $page_id = $post->ID;
     }
     li.splide__slide.is-active {
         opacity: 1;
+		cursor: pointer;
     }
     .splide__arrow {
         position: unset;
@@ -75,10 +76,10 @@ $page_id = $post->ID;
   <div class="max-w-full my-0 mx-auto relative">
     <div class="splide" role="group" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide"><img src="<?php echo( get_field('slide_1') ); ?>" class="aspect-video object-cover"></li>
-                <li class="splide__slide"><img src="<?php echo( get_field('slide_2') ); ?>" class="aspect-video object-cover"></li>
-                <li class="splide__slide"><img src="<?php echo( get_field('slide_3') ); ?>" class="aspect-video object-cover"></li>
+            <ul class="splide__list" id="territorio-slider">
+                <li class="splide__slide" data-src="<?php echo( get_field('slide_1') ); ?>"><img src="<?php echo( get_field('slide_1') ); ?>" class="aspect-video object-cover"></li>
+                <li class="splide__slide" data-src="<?php echo( get_field('slide_2') ); ?>"><img src="<?php echo( get_field('slide_2') ); ?>" class="aspect-video object-cover"></li>
+                <li class="splide__slide" data-src="<?php echo( get_field('slide_3') ); ?>"><img src="<?php echo( get_field('slide_3') ); ?>" class="aspect-video object-cover"></li>
             </ul>
         </div>
         <div class="splide__arrows">
@@ -112,6 +113,14 @@ $page_id = $post->ID;
 } );
 
 splide.mount();
+</script>
+
+<!-- Import LightGallery JS from cdn -->
+<script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js" integrity="sha256-0Zhc9IDI5elFpwJZlvdAM4u/6qlxi4qIOUlHDVl5wjU=" crossorigin="anonymous"></script>
+<script>
+    lightGallery(document.getElementById('territorio-slider'), {
+        download: false,
+    });
 </script>
 
 <!-- Banner -->

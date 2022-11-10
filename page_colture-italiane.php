@@ -17,6 +17,7 @@ $page_id = $post->ID;
     }
     li.splide__slide.is-active {
         opacity: 1;
+		cursor: pointer;
     }
     .splide__arrow {
         position: unset;
@@ -73,10 +74,10 @@ $page_id = $post->ID;
   <div class="max-w-full my-0 mx-auto relative">
     <div class="splide" role="group" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide"><img src="<?php echo( get_field('slide_1') ); ?>" class="aspect-video object-cover"></li>
-                <li class="splide__slide"><img src="<?php echo( get_field('slide_2') ); ?>" class="aspect-video object-cover"></li>
-                <li class="splide__slide"><img src="<?php echo( get_field('slide_3') ); ?>" class="aspect-video object-cover"></li>
+            <ul class="splide__list" id="colture-slider">
+                <li class="splide__slide" data-src="<?php echo( get_field('slide_1') ); ?>"><img src="<?php echo( get_field('slide_1') ); ?>" class="aspect-video object-cover"></li>
+                <li class="splide__slide" data-src="<?php echo( get_field('slide_2') ); ?>"><img src="<?php echo( get_field('slide_2') ); ?>" class="aspect-video object-cover"></li>
+                <li class="splide__slide" data-src="<?php echo( get_field('slide_3') ); ?>"><img src="<?php echo( get_field('slide_3') ); ?>" class="aspect-video object-cover"></li>
             </ul>
         </div>
         <div class="splide__arrows">
@@ -112,6 +113,13 @@ $page_id = $post->ID;
 splide.mount();
 </script>
 
+<!-- Import LightGallery JS from cdn -->
+<script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js" integrity="sha256-0Zhc9IDI5elFpwJZlvdAM4u/6qlxi4qIOUlHDVl5wjU=" crossorigin="anonymous"></script>
+<script>
+    lightGallery(document.getElementById('colture-slider'), {
+        download: false,
+    });
+</script>
 <!-- Banner -->
 <section style="background-image: url(<?php echo( get_field('immagine_banner_1') ); ?>);" class="w-full flex items-center justify-center bg-fixed bg-center bg-cover my-8">
   <div class="max-w-7xl mx-auto px-4 py-36 lg:py-52 flex flex-col gap-8 items-center col-start-1 row-start-1 row-end-15 lg:row-end-1">

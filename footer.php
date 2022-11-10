@@ -49,7 +49,7 @@ $home_id = get_option('page_on_front');
     <div class="block text-center lg:flex lg:justify-between max-w-7xl mx-auto py-4 border-t border-white text-white text-xs mt-4">
         <div class="flex flex-col lg:flex-row"><span>&copy; <?php echo(date('Y')); ?> Monteserico.</span><span class="hidden lg:inline">&nbsp;</span><span><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'Tutti i diritti riservati.' : 'All rights reserved.' ); ?></span></div>
         <div class="flex flex-col lg:flex-row">
-            <a href="https://elaboranext.com" target="_blank" class="hover:opacity-90 text-xs">Credits</a>
+            <a href="https://duerighe.it/" target="_blank" class="hover:opacity-90 text-xs"><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'Crediti' : 'Credits' ); ?></a>
         </div>
     </div>
 </footer>
@@ -77,6 +77,8 @@ $home_id = get_option('page_on_front');
     </script>
 <?php } ?>
 
+
+<?php /*
 <!-- Import LightGallery JS from cdn -->
 <script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js" integrity="sha256-0Zhc9IDI5elFpwJZlvdAM4u/6qlxi4qIOUlHDVl5wjU=" crossorigin="anonymous"></script>
 <script>
@@ -84,6 +86,7 @@ $home_id = get_option('page_on_front');
         download: false,
     });
 </script>
+*/ ?>
 <!-- Import jQuery -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
