@@ -138,8 +138,10 @@ splide.mount();
         <img class="w-full" src="<?php echo( get_field('immagine_piccola_fascia_3') ); ?>">
       </div>
       <div class="mt-4 lg:mt-0 flex flex-col gap-4">
-      <h2 class="font-serif text-oro text-5xl font-bold"><?php echo( get_field('titolo_fascia_3') ); ?></h2>
-        <h3 class="font-serif text-oro text-3xl font-bold my-4"><?php echo( get_field('sottotitolo_fascia_3') ); ?></h3>
+        <div>
+          <h2 class="font-serif text-oro text-5xl font-bold"><?php echo( get_field('titolo_fascia_3') ); ?></h2>
+          <h3 class="font-serif text-oro text-3xl font-bold my-4"><?php echo( get_field('sottotitolo_fascia_3') ); ?></h3>
+        </div>
         <p><?php echo( get_field('testo_fascia_3') ); ?></p>
       </div>
     </div>
