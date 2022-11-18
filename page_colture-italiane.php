@@ -75,9 +75,36 @@ $page_id = $post->ID;
     <div class="splide" role="group" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
             <ul class="splide__list" id="colture-slider">
-                <li class="splide__slide" data-src="<?php echo( get_field('slide_1') ); ?>"><img src="<?php echo( get_field('slide_1') ); ?>" class="aspect-video object-cover"></li>
-                <li class="splide__slide" data-src="<?php echo( get_field('slide_2') ); ?>"><img src="<?php echo( get_field('slide_2') ); ?>" class="aspect-video object-cover"></li>
-                <li class="splide__slide" data-src="<?php echo( get_field('slide_3') ); ?>"><img src="<?php echo( get_field('slide_3') ); ?>" class="aspect-video object-cover"></li>
+                <?php if ( !empty( get_field('slide_1') ) ) { ?>
+                  <li class="splide__slide" data-src="<?php echo( get_field('slide_1') ); ?>"><img src="<?php echo( get_field('slide_1') ); ?>" class="aspect-video object-cover"></li>
+                <?php } ?>
+                <?php if ( !empty( get_field('slide_2') ) ) { ?>
+                  <li class="splide__slide" data-src="<?php echo( get_field('slide_2') ); ?>"><img src="<?php echo( get_field('slide_2') ); ?>" class="aspect-video object-cover"></li>
+                <?php } ?>
+                <?php if ( !empty( get_field('slide_3') ) ) { ?>
+                  <li class="splide__slide" data-src="<?php echo( get_field('slide_3') ); ?>"><img src="<?php echo( get_field('slide_3') ); ?>" class="aspect-video object-cover"></li>
+                <?php } ?>
+                <?php if ( !empty( get_field('slide_4') ) ) { ?>
+                  <li class="splide__slide" data-src="<?php echo( get_field('slide_4') ); ?>"><img src="<?php echo( get_field('slide_4') ); ?>" class="aspect-video object-cover"></li>
+                <?php } ?>
+                <?php if ( !empty( get_field('slide_5') ) ) { ?>
+                  <li class="splide__slide" data-src="<?php echo( get_field('slide_5') ); ?>"><img src="<?php echo( get_field('slide_5') ); ?>" class="aspect-video object-cover"></li>
+                <?php } ?>
+                <?php if ( !empty( get_field('slide_6') ) ) { ?>
+                  <li class="splide__slide" data-src="<?php echo( get_field('slide_6') ); ?>"><img src="<?php echo( get_field('slide_6') ); ?>" class="aspect-video object-cover"></li>
+                <?php } ?>
+                <?php if ( !empty( get_field('slide_7') ) ) { ?>
+                  <li class="splide__slide" data-src="<?php echo( get_field('slide_7') ); ?>"><img src="<?php echo( get_field('slide_7') ); ?>" class="aspect-video object-cover"></li>
+                <?php } ?>
+                <?php if ( !empty( get_field('slide_8') ) ) { ?>
+                  <li class="splide__slide" data-src="<?php echo( get_field('slide_8') ); ?>"><img src="<?php echo( get_field('slide_8') ); ?>" class="aspect-video object-cover"></li>
+                <?php } ?>
+                <?php if ( !empty( get_field('slide_9') ) ) { ?>
+                  <li class="splide__slide" data-src="<?php echo( get_field('slide_9') ); ?>"><img src="<?php echo( get_field('slide_9') ); ?>" class="aspect-video object-cover"></li>
+                <?php } ?>
+                <?php if ( !empty( get_field('slide_10') ) ) { ?>
+                  <li class="splide__slide" data-src="<?php echo( get_field('slide_10') ); ?>"><img src="<?php echo( get_field('slide_10') ); ?>" class="aspect-video object-cover"></li>
+                <?php } ?>
             </ul>
         </div>
         <div class="splide__arrows">
