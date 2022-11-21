@@ -163,13 +163,16 @@ splide.mount();
       </div>
       <div class="mt-4 lg:mt-0 flex flex-col gap-4">
         <?php if ( !empty( get_field('titolo_fascia_3') ) ) { ?>
-        <h2 class="font-serif text-oro text-5xl font-bold ml-0 lg:ml-8"><?php echo( get_field('titolo_fascia_3') ); ?></h2>
+          <h2 class="font-serif text-oro text-5xl font-bold ml-0 lg:ml-8"><?php echo( get_field('titolo_fascia_3') ); ?></h2>
         <?php } ?>
         <p class="mt0 ml-0 lg:ml-8"><?php echo( get_field('testo_fascia_3') ); ?></p>
       </div>
     </div>
     <div class="w-full lg:grid lg:grid-cols-2 gap-0">
         <div class="mt-4 lg:mt-0 flex flex-col gap-4">
+          <?php if ( !empty( get_field('titolo_fascia_3') ) ) { ?>
+            <h2 class="font-serif text-oro text-5xl font-bold ml-0 lg:ml-8"><?php echo( get_field('titolo_fascia_4') ); ?></h2>
+          <?php } ?>
             <p class="mt-0 mb-4 lg:mb-0 lg:mt-8 mr-0 lg:mr-8"><?php echo( get_field('testo_fascia_4') ); ?></p>
       </div>
       <div class="flex flex-col gap-4">
