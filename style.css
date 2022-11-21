@@ -1156,6 +1156,10 @@ html {
     margin-left: 2rem;
   }
 
+  .lg\:mt-4 {
+    margin-top: 1rem;
+  }
+
   .lg\:mt-8 {
     margin-top: 2rem;
   }
