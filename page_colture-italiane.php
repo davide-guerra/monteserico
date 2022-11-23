@@ -135,7 +135,7 @@ $page_id = $post->ID;
   /* focus  : 'center', */
   pagination: false,
   updateOnMove: true,
-  clones: 10,
+  clones: 0,
 } );
 
 splide.mount();
