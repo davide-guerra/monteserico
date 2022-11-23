@@ -147,6 +147,7 @@ splide.mount();
 <script>
     lightGallery(document.getElementById('territorio-slider'), {
         download: false,
+        counter: false,
     });
 </script>
 

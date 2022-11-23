@@ -145,6 +145,7 @@ splide.mount();
 <script>
     lightGallery(document.getElementById('colture-slider'), {
         download: false,
+        counter: false,
     });
 </script>
 <!-- Banner -->
