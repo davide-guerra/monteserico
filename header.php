@@ -87,7 +87,7 @@ $home_id = get_option('page_on_front');
         'bg-white shadow-lg': isScrolled,
         'bg-transparent': !isScrolled
         }"
-        >
+        <?php echo( ( !is_front_page() ) ? 'style="position: relative !important;"' : '' ); ?>>
         <div x-show="!isScrolled" id="inital-header">
             <div class="flex items-start justify-between flex-wrap max-w-7xl mx-auto px-4 py-4 lg:pt-8">
                 <!-- First item: logo -->
