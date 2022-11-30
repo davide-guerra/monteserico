@@ -44,6 +44,15 @@ $home_id = get_option('page_on_front');
                     background-attachment: scroll;
                 }
             }
+            @media screen and (max-width: 900px) {
+                div#initial-header {
+                    display: none !important;
+                }
+                div#scrolled-header {
+                    display: block !important;
+                    background-color: #fff !important;
+                }
+            }
         </style>
     <?php //} ?>
     <style>
