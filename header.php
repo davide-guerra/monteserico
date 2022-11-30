@@ -61,13 +61,7 @@ $home_id = get_option('page_on_front');
                 body#home div.white-icon ul li.wpml-ls-item a {
                     color: #fff;
                 }
-                <?php if( !is_front_page() ) { ?>
-                
-                div#main-header-div-wrapper {
-                    position: relative !important;
-                }
-
-                <?php } ?>
+                <?php echo( (!is_front_page()) ? 'div#main-header-div-wrapper { position: relative !important; }' : '' ); ?>
             }
         </style>
     <?php //} ?>
