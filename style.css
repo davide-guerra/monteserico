@@ -1276,27 +1276,6 @@ html {
 }
 
 @media (min-width: 1280px) {
-  .xl\:absolute {
-    position: absolute;
-  }
-
-  .xl\:left-\[17vw\] {
-    left: 17vw;
-  }
-
-  .xl\:top-4 {
-    top: 1rem;
-  }
-
-  .xl\:w-\[20vw\] {
-    width: 20vw;
-  }
-
-  .xl\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .xl\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
@@ -1304,7 +1283,28 @@ html {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:absolute {
+    position: absolute;
+  }
+
+  .\32xl\:left-\[17vw\] {
+    left: 17vw;
+  }
+
+  .\32xl\:top-4 {
+    top: 1rem;
+  }
+
   .\32xl\:aspect-\[7\/2\] {
     aspect-ratio: 7 / 2;
+  }
+
+  .\32xl\:w-\[20vw\] {
+    width: 20vw;
+  }
+
+  .\32xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
