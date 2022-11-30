@@ -39,6 +39,11 @@ $home_id = get_option('page_on_front');
 			.lg-backdrop.in {
 				opacity: .85;
 			}
+            @supports (-webkit-overflow-scrolling: touch) {
+                section#banner-section {
+                    background-attachment: scroll;
+                }
+            }
         </style>
     <?php //} ?>
     <style>
