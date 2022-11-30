@@ -40,7 +40,7 @@ $home_id = get_option('page_on_front');
 				opacity: .85;
 			}
             @supports (-webkit-touch-callout: none) {
-                section#banner-section {
+                section#banner-section, section#banner-section-2 {
                     background-attachment: scroll;
                 }
             }

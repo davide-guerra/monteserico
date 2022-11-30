@@ -86,7 +86,7 @@ $page_id = $post->ID;
 </section>
 
 <!-- Primo banner -->
-<section style="background-image: url(<?php echo( get_field('immagine_banner_1') ); ?>);" class="w-full flex items-center justify-center bg-fixed bg-center bg-contain my-8">
+<section id="banner-section" style="background-image: url(<?php echo( get_field('immagine_banner_1') ); ?>);" class="w-full flex items-center justify-center bg-fixed bg-center bg-contain my-8">
   <div class="max-w-7xl mx-auto px-4 py-36 lg:py-52 flex flex-col gap-8 items-center col-start-1 row-start-1 row-end-15 lg:row-end-1">
     <h2 class="text-4xl lg:text-6xl text-white text-center font-serif"><?php echo( get_field('testo_banner_1') ); ?></h2>
   </div>
@@ -129,7 +129,7 @@ $page_id = $post->ID;
 </section>
 
 <!-- Secondo banner -->
-<section style="background-image: url(<?php echo( get_field('immagine_banner_2') ); ?>);" class="w-full flex items-center justify-center bg-fixed bg-center bg-contain my-8" style="-webkit-background-size: cover;">
+<section id="banner-section-2" style="background-image: url(<?php echo( get_field('immagine_banner_2') ); ?>);" class="w-full flex items-center justify-center bg-fixed bg-center bg-contain my-8" style="-webkit-background-size: cover;">
   <div class="max-w-7xl mx-auto px-4 py-36 lg:py-52 flex flex-col gap-8 items-center col-start-1 row-start-1 row-end-15 lg:row-end-1">
     <h2 class="text-4xl lg:text-6xl text-white text-center font-serif"><?php echo( get_field('testo_banner_2') ); ?></h2>
   </div>
