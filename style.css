@@ -1196,12 +1196,12 @@ html {
     width: 12rem;
   }
 
-  .lg\:w-\[20vw\] {
-    width: 20vw;
-  }
-
   .lg\:w-9\/12 {
     width: 75%;
+  }
+
+  .lg\:w-\[20vw\] {
+    width: 20vw;
   }
 
   .lg\:basis-1\/2 {
@@ -1253,14 +1253,14 @@ html {
     padding-right: 3rem;
   }
 
-  .lg\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .lg\:py-52 {
     padding-top: 13rem;
     padding-bottom: 13rem;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .lg\:pt-8 {
@@ -1297,6 +1297,27 @@ html {
 }
 
 @media (min-width: 1280px) {
+  .xl\:absolute {
+    position: absolute;
+  }
+
+  .xl\:left-\[17vw\] {
+    left: 17vw;
+  }
+
+  .xl\:top-4 {
+    top: 1rem;
+  }
+
+  .xl\:w-\[20vw\] {
+    width: 20vw;
+  }
+
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .xl\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
