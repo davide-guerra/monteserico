@@ -70,7 +70,7 @@ $home_id = get_option('page_on_front');
         'bg-transparent': !isScrolled
         }"
         >
-        <div x-show="!isScrolled">
+        <div x-show="!isScrolled" id="inital-header">
             <div class="flex items-start justify-between flex-wrap max-w-7xl mx-auto px-4 py-4 lg:pt-8">
                 <!-- First item: logo -->
                 <div class="text-white order-2 flex justify-center lg:justify-start">
@@ -167,7 +167,7 @@ $home_id = get_option('page_on_front');
                 </ul>    
             </nav>
         </div>
-        <div x-show="isScrolled">
+        <div x-show="isScrolled" id="scrolled-header">
             <div class="flex items-center flex-wrap max-w-7xl mx-auto px-4">
                 <!-- First item: logo -->
                 <div class="text-white order-2 lg:order-1 flex-1 flex justify-center lg:justify-start">
