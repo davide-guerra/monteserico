@@ -55,7 +55,7 @@ $home_id = get_option('page_on_front');
                 body#home div#scrolled-header {
                     background: transparent !important;
                 }
-                body#hove .white-icon {
+                body#home svg.white-icon {
                     fill: #fff !important;
                 }
             }
