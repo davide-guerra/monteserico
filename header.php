@@ -39,6 +39,11 @@ $home_id = get_option('page_on_front');
 			.lg-backdrop.in {
 				opacity: .85;
 			}
+            @media (-webkit-min-device-pixel-ratio: 2) and (min-width1800px) { 
+                section#banner-section {
+                    background-size: cover !important,
+                }
+            }
         </style>
     <?php //} ?>
     <style>
