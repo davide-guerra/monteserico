@@ -45,7 +45,7 @@ $home_id = get_option('page_on_front');
                 }
             }
             @media screen and (max-width: 900px) {
-                div#initial-header {
+                div#inital-header {
                     display: none !important;
                 }
                 div#scrolled-header {
