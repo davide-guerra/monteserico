@@ -1119,18 +1119,6 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .lg\:absolute {
-    position: absolute;
-  }
-
-  .lg\:left-\[17vw\] {
-    left: 17vw;
-  }
-
-  .lg\:top-4 {
-    top: 1rem;
-  }
-
   .lg\:order-1 {
     order: 1;
   }
@@ -1200,10 +1188,6 @@ html {
     width: 75%;
   }
 
-  .lg\:w-\[20vw\] {
-    width: 20vw;
-  }
-
   .lg\:basis-1\/2 {
     flex-basis: 50%;
   }
@@ -1256,11 +1240,6 @@ html {
   .lg\:py-52 {
     padding-top: 13rem;
     padding-bottom: 13rem;
-  }
-
-  .lg\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .lg\:pt-8 {
