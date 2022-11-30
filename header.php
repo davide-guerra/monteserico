@@ -39,11 +39,6 @@ $home_id = get_option('page_on_front');
 			.lg-backdrop.in {
 				opacity: .85;
 			}
-            @media screen and (min-width:1900px) { 
-                section#banner-section {
-                    background-size: cover !important;
-                }
-            }
         </style>
     <?php //} ?>
     <style>
