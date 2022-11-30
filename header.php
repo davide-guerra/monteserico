@@ -78,7 +78,7 @@ $home_id = get_option('page_on_front');
 </head>
 <body <?php echo( (is_front_page()) ? 'id="home"' : "" ); ?>class="absolute top-0 w-full min-h-screen flex flex-col">
     <div
-        class="w-full z-10 top-0 <?php echo( (is_front_page() ? 'fixed' : 'relative'); ?> bg-white"
+        class="w-full z-10 top-0 <?php echo( (is_front_page()) ? 'fixed' : 'relative'); ?> bg-white"
         x-data="{ isOpen: false, isScrolled: false, dropdownMenu: false }"
         x-init="isScrolled = (window.scrollY > 1) ? true : false"
         @scroll.window="isScrolled = (window.scrollY > 1) ? true : false"
