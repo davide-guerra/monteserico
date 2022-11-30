@@ -77,7 +77,7 @@ $home_id = get_option('page_on_front');
     <?php } ?>
 </head>
 <body <?php echo( (is_front_page()) ? 'id="home"' : "" ); ?>class="absolute top-0 w-full min-h-screen flex flex-col">
-    <div
+    <div id="main-header-div-wrapper"
         class="w-full z-10 top-0 fixed bg-white"
         x-data="{ isOpen: false, isScrolled: false, dropdownMenu: false }"
         x-init="isScrolled = (window.scrollY > 1) ? true : false"
@@ -87,7 +87,7 @@ $home_id = get_option('page_on_front');
         'bg-white shadow-lg': isScrolled,
         'bg-transparent': !isScrolled
         }"
-        <?php echo( ( !is_front_page() ) ? 'style="position: relative !important;"' : '' ); ?>>
+        >
         <div x-show="!isScrolled" id="inital-header">
             <div class="flex items-start justify-between flex-wrap max-w-7xl mx-auto px-4 py-4 lg:pt-8">
                 <!-- First item: logo -->
