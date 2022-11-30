@@ -76,7 +76,7 @@ $page_id = $post->ID;
         <div class="splide__track">
             <ul class="splide__list" id="colture-slider">
                 <?php if ( !empty( get_field('slide_1') ) ) { ?>
-                  <li class="splide__slide" data-src="<?php echo( get_field('slide_1') ); ?>"><img src="<?php echo( get_field('slide_1') ); ?>" class="aspect-video object-cover"></li>
+                  <li class="splide__slide" data-src="<?php echo( get_field('slide_1') ); ?>"><img src="<?php echo( get_field('slide_1') ); ?>" class="aspect-video object-cover w-full"></li>
                 <?php } ?>
                 <?php if ( !empty( get_field('slide_2') ) ) { ?>
                   <li class="splide__slide" data-src="<?php echo( get_field('slide_2') ); ?>"><img src="<?php echo( get_field('slide_2') ); ?>" class="aspect-video object-cover w-full"></li>
