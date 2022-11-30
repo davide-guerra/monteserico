@@ -893,6 +893,10 @@ html {
   background-size: cover;
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
 .bg-fixed {
   background-attachment: fixed;
 }
@@ -1158,10 +1162,6 @@ html {
 
   .lg\:mt-4 {
     margin-top: 1rem;
-  }
-
-  .lg\:mt-8 {
-    margin-top: 2rem;
   }
 
   .lg\:mr-8 {
