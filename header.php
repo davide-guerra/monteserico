@@ -50,7 +50,6 @@ $home_id = get_option('page_on_front');
                 }
                 div#scrolled-header {
                     display: block !important;
-                    background-color: #fff !important;
                 }
             }
         </style>
