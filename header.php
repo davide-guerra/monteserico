@@ -58,6 +58,9 @@ $home_id = get_option('page_on_front');
                 body#home svg.white-icon {
                     fill: #fff !important;
                 }
+                body#home div.white-icon ul li.wpml-ls-item a {
+                    color: #fff;
+                }
             }
         </style>
     <?php //} ?>
