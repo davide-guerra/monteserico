@@ -55,6 +55,9 @@ $home_id = get_option('page_on_front');
                 body#home div#scrolled-header {
                     background: transparent !important;
                 }
+                body#hove .white-icon {
+                    fill: #fff !important;
+                }
             }
         </style>
     <?php //} ?>
@@ -191,7 +194,7 @@ $home_id = get_option('page_on_front');
                 <!-- Second item: toggle button (hidden on large screens) and menu -->
                 <div id="hamburger-and-menu" class="order-1 lg:oder-2 h-full" @click.away="isOpen = false">
                     <button @click="isOpen = !isOpen" type="button" class="block lg:hidden px-2 hover:opacity-90 focus:outline-none">
-                        <svg class="h-6 w-6 fill-current" :class="isScrolled ? 'white-icon' : ''" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <svg class="h-6 w-6 fill-current" :class="!isScrolled ? 'white-icon' : ''" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
                         </svg>
                     </button>
@@ -264,7 +267,7 @@ $home_id = get_option('page_on_front');
                     </nav>
                 </div>
                 <!-- Third element: menu -->
-                <div id="language-switcher-wrapper" class="block lg:hidden order-3 no-underline flex flex-row gap-6 items-center">
+                <div id="language-switcher-wrapper" class="block lg:hidden order-3 no-underline flex flex-row gap-6 items-center" :class="!isScrolled ? 'white-icon' : ''">
                     <?php if( apply_filters( 'wpml_element_has_translations', NULL, $post->ID, 'page' ) ) { ?>
                         <div class="hidden lg:block">|</div>
                     <?php } ?>
