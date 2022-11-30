@@ -50,6 +50,10 @@ $home_id = get_option('page_on_front');
                 }
                 div#scrolled-header {
                     display: block !important;
+                    background: #fff !important;
+                }
+                body#home div#scrolled-header {
+                    background: transparent !important;
                 }
             }
         </style>
@@ -66,7 +70,7 @@ $home_id = get_option('page_on_front');
         <title><?php echo(is_404() ? 'Not found' : the_title()); ?> | <?php echo( get_bloginfo( 'name' ) ); ?></title>
     <?php } ?>
 </head>
-<body class="absolute top-0 w-full min-h-screen flex flex-col">
+<body <?php echo( (is_front_page()) ? 'id="home"' : "" ); ?>class="absolute top-0 w-full min-h-screen flex flex-col">
     <div
         class="w-full z-10 top-0 fixed bg-white"
         x-data="{ isOpen: false, isScrolled: false, dropdownMenu: false }"
