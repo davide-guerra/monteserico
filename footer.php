@@ -47,7 +47,7 @@ $home_id = get_option('page_on_front');
         </div>
     </div>
     <div class="block text-center lg:flex lg:justify-between max-w-7xl mx-auto py-4 border-t border-white text-white text-xs mt-4">
-        <div class="flex flex-col lg:flex-row"><span>&copy; <?php echo(date('Y')); ?> Monteserico.</span><span class="hidden lg:inline">&nbsp;</span><span><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'Tutti i diritti riservati.' : 'All rights reserved.' ); ?></span></div>
+        <div class="flex flex-col lg:flex-row"><span>&copy; <?php echo(date('Y')); ?> Monteserico Colture Italiane.</span><span class="hidden lg:inline">&nbsp;</span><span><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'Tutti i diritti riservati.' : 'All rights reserved.' ); ?></span><span class="hidden lg:inline">&nbsp;</span><span><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'P.IVA.' : 'VAT.' ); ?> 08606270729</span></div>
         <div class="flex flex-col lg:flex-row">
             <a href="https://duerighe.it/" target="_blank" class="hover:opacity-90 text-xs"><?php echo( (ICL_LANGUAGE_CODE == 'it') ? 'Crediti' : 'Credits' ); ?></a>
         </div>
