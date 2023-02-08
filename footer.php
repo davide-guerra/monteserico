@@ -25,6 +25,9 @@ $home_id = get_option('page_on_front');
                 <a href="mailto:<?php echo( get_field('email', $home_id) ); ?>" class="cursor-pointer text-white hover:opacity-90">
                     <?php echo( get_field('email', $home_id) ); ?>
                 </a>
+		<a href="mailto:montesericosrl@pec.it" class="cursor-pointer text-white hover:opacity-90">
+                    montesericosrl@pec.it
+                </a>
             </div>
             <!-- Seconda colonna: menu -->
             <?php
